@@ -1,0 +1,333 @@
+<html>
+<head>
+  <title>Homepage of Łukasz Czajka</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="en,de">
+  <meta name="author" content="Łukasz Czajka">
+</head>
+<body>
+  <h2>Thesis topic proposals (Abschlussarbeitenthemenvorschläge)</h2>
+
+  <p>
+    Die Abschlussarbeiten können auf Englisch oder auf Deutsch
+    geschrieben werden. Diese Seite ist auf Englisch, weil ich
+    Englisch besser kenne. Unten folgen Themenvorschläge für
+    Abschlussarbeiten
+    die <a href="https://ls14-www.cs.tu-dortmund.de/cms/de/mitarbeiter/wimis/Czajka.html">ich</a>
+    betreuen will.
+  </p>
+
+  <p>
+    The following are some proposals for master thesis topics which
+    <a href="https://ls14-www.cs.tu-dortmund.de/cms/de/mitarbeiter/wimis/Czajka.html">I</a>
+    am willing to supervise. <b>It is not necessary to address all
+    goals listed for a given topic.</b> Only one or some may be
+    sufficient for a master or a bachelor thesis, depending on which
+    ones and in how much depth they are treated. Contact me to talk
+    about the details: lukasz.czajka at tu-dortmund.de (can be in
+    German if you like).
+  </p>
+
+  <p>
+    It is also possible to propose your own topic, or I can invent a
+    topic not listed here, in the following broad areas: functional
+    programming, programming languages (theory and implementation),
+    proof assistants, logic and type theory, automated theorem
+    proving, deductive program verification.
+  </p>
+
+  <p>
+    Some paper links below require a subscription and are therefore
+    accessible only through the university network.
+  </p>
+
+  <hr/>
+
+  <h3>Formalization (or implementation) of functional data structures</h3>
+
+  <p>
+    Choose some of your favourite functional data structures
+    (e.g. from [1]) and formalize them in Coq [2] or Isabelle/HOL. For
+    a bachelor thesis, only a good implementation of a nontrivial
+    functional data structure in Haskell or OCaml may be sufficient.
+  </p>
+
+  <h4>References</h4>
+  <ol>
+    <li>
+      C. Okasaki: <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely functional data structures</a>
+    </li>
+    <li>
+      Y. Bertot: <a href="https://cel.archives-ouvertes.fr/file/index/docid/459139/filename/coq-hurry.pdf">Coq in a hurry</a>
+    </li>
+  </ol>
+
+  <h4>Prerequisites</h4>
+
+  <ul>
+    <li>Functional programming</li>
+    <li>Coq or Isabelle/HOL (unless only implementation is done)</li>
+  </ul>
+
+  <h4>Suggested courses</h4>
+
+  <ul>
+    <li><a href="https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html">ATLSE</a></li>
+  </ul>
+
+  <hr/>
+
+  <h3>Machine-learning premise selection for dependent type theory</h3>
+
+  <p>
+    Hammers [3] are automated reasoning tools for proof assistants [1],
+    which combine machine-learning with automated theorem proving. A
+    typical use is to prove relatively simple goals using available
+    lemmas. The problem is to find appropriate lemmas in a large
+    collection of all accessible lemmas and combine them to prove the
+    goal.
+  </p>
+
+  <p>
+    The machine-learning component of a hammer, called premise
+    selection, tries to solve the following problem: given a large
+    library of lemma statements together with their proofs, and a goal
+    statement G, predict which lemmas are likely useful for proving
+    G. For machine-learning purposes, proofs are usually reduced to a
+    set of dependencies. A dependency of a lemma L is any lemma which
+    is used in a proof of L. Hence, given a large dataset of lemma
+    statements with their dependencies, we want to predict an
+    over-approximation of the set of dependencies of a new statement.
+  </p>
+
+  <p>
+    CoqHammer [4,5] is a hammer tool
+    for <a href="http://coq.inria.fr">Coq</a> [1] -- a proof assistant
+    based on dependent type theory. The goal of a thesis would be to
+    improve premise selection in CoqHammer by adapting the work done
+    for other proof assistants.
+  </p>
+
+  <h4>Goals</h4>
+
+  <ol>
+    <li>Design a better set of features, basing on [6].</li>
+    <li>Implement more machine-learning methods and compare them [3,
+      Section 2].</li>
+    <li>Investigate adapting a deep learning approach [7].</li>
+  </ol>
+
+  A Bachelor thesis for this topic could concentrate only on the first
+  goal: better feature design.
+
+  <h4>References</h4>
+  <ol>
+    <li>
+      H. Geuvers: <a href="https://www.ias.ac.in/article/fulltext/sadh/034/01/0003-0025">Proof
+      Assistants: History, Ideas and Future</a>
+    </li>
+    <li>
+      Y. Bertot: <a href="https://cel.archives-ouvertes.fr/file/index/docid/459139/filename/coq-hurry.pdf">Coq in a hurry</a>
+    </li>
+    <li>
+      J. Blanchette, C. Kaliszyk, L. Paulson,
+      J. Urban: <a href="https://people.mpi-inf.mpg.de/~jblanche/h4qed.pdf">Hammering
+      towards QED</a>
+    </li>
+    <li>
+      <a href="https://github.com/lukaszcz/coqhammer">CoqHammer</a>
+    </li>
+    <li>
+      Ł. Czajka, C. Kaliszyk: <a href="https://link.springer.com/article/10.1007/s10817-018-9458-4">
+      Hammer for Coq: Automation for Dependent Type Theory</a>
+    </li>
+    <li>
+      C. Kaliszyk, J. Urban,
+      J. Vyskocil: <a href="https://www.ijcai.org/Abstract/15/435">Efficient
+      Semantic Features for Automated Reasoning over Large
+      Theories</a>
+    </li>
+    <li>
+      A. Alemi, F. Chollet, N. Elen, G. Irving, C. Szegedy,
+      J. Urban: <a href="https://arxiv.org/abs/1606.04442">DeepMath -
+      Deep Sequence Models for Premise Selection</a>
+    </li>
+  </ol>
+
+  <h4>Prerequisites</h4>
+
+  <ul>
+    <li>Machine learning</li>
+    <li>Functional programming</li>
+    <li>Coq and type theory (only superficial knowledge of Coq and
+      type theory is necessary as a prerequisite, but deeper
+      knowledge will help)</li>
+  </ul>
+
+  <h4>Suggested courses</h4>
+
+  <ul>
+    <li><a href="http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Intelligente_Systeme/INF-MSc-506.pdf">Maschinelles Lernen</a></li>
+    <li><a href="https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html">ATLSE</a></li>
+  </ul>
+
+  <hr/>
+
+  <h3>Improvements of CoqHammer</h3>
+
+  <p>
+    CoqHammer [1,2] (see also the previous
+    topic) is an automated reasoning tool for Coq - currently the most recognisable and popular such tool for Coq. However, there are many aspects of CoqHammer that could be improved. See the <a href="https://github.com/lukaszcz/coqhammer/tree/coq8.12/TODO.md">TODO file</a> for a list of current problems. Some of these problems are suitable as topics for a Master thesis. A good and ambitious student could also base a Bachelor thesis on a (partial) solution to one of the problems. If you're interested in contributing to a cutting-edge research software project used by many people, ask me about the details.
+  </p>
+
+  <h4>References</h4>
+  <ol>
+    <li>
+      <a href="https://github.com/lukaszcz/coqhammer">CoqHammer</a>
+    </li>
+    <li>
+      Ł. Czajka, C. Kaliszyk: <a href="https://link.springer.com/article/10.1007/s10817-018-9458-4">
+      Hammer for Coq: Automation for Dependent Type Theory</a>
+    </li>
+  </ol>
+
+  <h4>Prerequisites</h4>
+
+  <ul>
+    <li>Coq and LTac</li>
+    <li>Functional programming</li>
+  </ul>
+
+  <h4>Suggested courses</h4>
+
+  <ul>
+    <li><a href="https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html">ATLSE</a></li>
+    <li><a href="http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf">LMSE1</a> and <a href="http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf">LMSE2</a></li>
+  </ul>
+
+  <hr/>
+
+  <h3>Proof search in intuitionistic first-order logic</h3>
+
+  <p>
+    The goal of a thesis would be to generalise slightly some results
+    from the literature [1,2,3] on the decidability of certain
+    fragments of intuitionistic first-order logic and implement
+    decision procedures for these fragments. Also implement an
+    extension of the Intuition prover [4], which searches for proofs
+    in minimal first-order logic (i.e. the universal-implicational
+    fragment of intuitionistic logic), to handle all connectives.
+  </p>
+
+  <h4>Goals</h4>
+  <ol>
+    <li>Extend the result from [1] on EXPSPACE-completeness of the
+    negative fragment of minimal first-order logic without function
+    symbols to handle all connectives and function symbols with the
+    restriction that the size of each individual term occurring in a
+    proof must be bounded by a constant. Analogously, extend the
+    result from [1] on the co-NEXPTIME-completeness of the
+    arity-bounded negative fragment of minimal first-order logic
+    without function symbols.</li>
+    <li>Adapt the results of [7] to show EXPTIME-completeness of the
+    Horn fragment (i.e. derivability of an atom from a set of Horn
+    clauses) with restrictions as in the previous point.</li>
+    <li>Implement the above decision procedures.</li>
+    <li>Extend Intuition [4] to handle all connectives, basing on
+    [5]. The paper [5] and the current procedure of Intuition are
+    based on an extension of the automata-theoretic algorithm from
+    [6].</li>
+    <li>Implement a decision procedure for the positive fragment
+    [2,3]. This goal is hard and could constitute a Master thesis by
+    itself if done in sufficient depth.</li>
+  </ol>
+
+  A Bachelor thesis for this topic could concentrate only on the
+  implementation, possibly only for the universal-implicational
+  variants of the fragments without function symbols.
+
+  <h4>References</h4>
+  <ol>
+    <li>A. Schubert, P. Urzyczyn,
+    K. Zdanowski: <a href="https://lmcs.episciences.org/2623">On the
+        Mints Hierarchy in First-Order Intuitionistic Logic</a></li>
+    <li>G. Mints: <a href="http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=tm&paperid=2929&option_lang=eng">
+        Solvability of the problem of deducibility in LJ for a class
+        of formulas not containing negative occurrences of
+        quantifiers</a></li>
+    <li>G. Dowek,
+    Y. Jiang: <a href="https://www.sciencedirect.com/science/article/pii/S1571066104807552">Eigenvariables,
+    bracketing and the decidability of positive minimal intuitionistic
+    logic</a></li>
+    <li><a href="https://www.mimuw.edu.pl/~alx/intuition/">Intuition prover</a></li>
+    <li>M. Zielenkiewicz,
+    A. Schubert: <a href="https://arxiv.org/abs/1608.05698">Automata
+        Theory Approach to Predicate Intuitionistic Logic</a></li>
+    <li>A. Schubert, W. Dekkers,
+    H. Barendregt: <a href="http://drops.dagstuhl.de/opus/volltexte/2015/5411/">Automata
+        Theoretic Account of Proof Search</a></li>
+    <li>B. Düdder, M. Moritz, J. Rehof,
+    P. Urzyczyn: <a href="http://drops.dagstuhl.de/opus/volltexte/2012/3676/">Bounded
+        Combinatory Logic</a></li>
+  </ol>
+
+  <h4>Prerequisites</h4>
+
+  <ul>
+    <li>Logic and type theory</li>
+  </ul>
+
+  <h4>Suggested courses</h4>
+
+  <ul>
+    <li><a href="http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf">LMSE1</a> and <a href="http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf">LMSE2</a></li>
+    <li><a href="http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Basismodule/Forschungsbereich_Algorithmen_und_Komplexitaet/INF-MSc-242.pdf">Komplexitätstheorie</a></li>
+  </ul>
+
+  <hr/>
+
+  <h3>Proof search in Pure Type Systems</h3>
+
+  <p>
+    The goal of a thesis would be to compare and/or implement the
+    proof search procedures for Pure Type Systems (or the Lambda-Cube)
+    from the papers [1,2].
+  </p>
+
+  <h4>References</h4>
+  <ol>
+    <li>G. Dowek: <a href="https://academic.oup.com/logcom/article/3/3/287/980271">A
+    Complete Proof Synthesis Method for the Cube of Type
+    Systems</a></li>
+    <li>S. Lengrand, R. Dyckhoff,
+    J. McKinna: <a href="https://arxiv.org/abs/1012.3372">A Focused
+    Sequent Calculus Framework for Proof Search in Pure Type
+        Systems</a></li>
+  </ol>
+
+  <h4>Prerequisites</h4>
+
+  <ul>
+    <li>Logic and type theory</li>
+  </ul>
+
+  <h4>Suggested courses</h4>
+
+  <ul>
+    <li><a href="http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf">LMSE1</a> and <a href="http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf">LMSE2</a></li>
+  </ul>
+
+  <hr/>
+  <table width="100%">
+    <tr>
+      <td>
+        <a href="http://www.mimuw.edu.pl/~lukaszcz">back to main
+        page</a>
+      </td>
+      <td align="right">
+        Last updated 23 Apr 2020 by Łukasz Czajka
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
