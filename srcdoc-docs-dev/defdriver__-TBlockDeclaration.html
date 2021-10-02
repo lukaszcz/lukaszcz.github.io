@@ -1,0 +1,1437 @@
+<html>
+<head>
+<title>Reference for TBlockDeclaration</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TBlockDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TBlockDeclaration = </span><span class="program_code"><span class="keyword">class</span></span><span class="program_code">(TDeclaration)</span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Immediate ancestor</h3>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p><p>
+
+<h3>Immediate descendants</h3>
+<a href="defdriver__-TClassDeclaration.html">TClassDeclaration</a>, <a href="defdriver__-TRootDeclaration.html">TRootDeclaration</a>, <a href="defdriver__-TUnitDeclaration.html">TUnitDeclaration</a>, <a href="defdriver__-TInterfaceDeclaration.html">TInterfaceDeclaration</a>
+<h3>Source</h3>
+defdriver.pas on line 280
+</p><p>
+
+<h3>Description</h3>
+ A declaration containing other declarations. This class is abstract. It should never be instantiated.
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#Create">Create</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="15%">
+<p>
+destructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteOut">WriteOut</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#HasDeclarations">HasDeclarations</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns true if self contains some declarations, i.e. some declarations were declared in the block of self.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#LastDeclaration">LastDeclaration</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns the most recently added declaration or nil if self contains no declarations.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#FindDeclaration">FindDeclaration</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Finds a declaration with the name <span class="local_symbol">name</span> in the declarations in the current block <em>only</em>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#SearchDeclaration">SearchDeclaration</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Searches a declaration in <em>all</em> declarations starting from self.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#FetchRelatedComment">FetchRelatedComment</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Fetches a related comment by calling SearchRelated.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#IsDerivedFrom">IsDerivedFrom</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns true if <span class="local_symbol">decl</span> is present among the ancestors of self.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteFromHashTable">WriteFromHashTable</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes links to declarations which are associated in the table with the name of self.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#FillMap">FillMap</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ <span class="local_symbol">map</span> Is a map of strings to TListAdt's.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#StringsToDeclarations">StringsToDeclarations</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ For each string in <span class="local_symbol">strs</span> tires to find a declaration with this name by calling SearchDeclaration.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#SortDeclarations">SortDeclarations</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Sorts <span class="local_symbol">decls</span> according to the symbolType field as the primary key and to the Name fileld as the secondary key.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteDeclarations">WriteDeclarations</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes out the declarations <span class="local_symbol">decl</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#AddDeclaration">AddDeclaration</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Adds a declaration to the block declaration.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#SearchRelated">SearchRelated</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Searches for the nearest methods above and including self in the class hierarchy and with the name <span class="local_symbol">name</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#PushAncestorsAtFront">PushAncestorsAtFront</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Should push all declarations considered to be ancestors of self at the front of <span class="local_symbol">deque</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteHead">WriteHead</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteMiddle">WriteMiddle</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteTail">WriteTail</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="Create"><hr></a>
+
+<h2>TBlockDeclaration.Create</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> Create(adecl : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">; aname : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; aancestors : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; avisibility : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; avisibilitytype : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TVisibilityType">TVisibilityType</a></span></span><span class="program_code">; asymboltype : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; alinenum : </span><span class="program_code"><span class="global_symbol">Cardinal</span></span><span class="program_code">; acomment : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TComment.html">TComment</a></span></span><span class="program_code">; asection : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; aparentDecl : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a></span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="defdriver__-TDeclaration.html#Create">TDeclaration.Create</a>, <a href="defdriver__-TBasicDeclaration.html#Create">TBasicDeclaration.Create</a>
+<h3>Source</h3>
+defdriver.pas on line 362
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#Create">Create</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Destroy"><hr></a>
+
+<h2>TBlockDeclaration.Destroy</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">destructor</span></span><span class="program_code"> Destroy; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="defdriver__-TDeclaration.html#Destroy">TDeclaration.Destroy</a>, <a href="defdriver__-TBasicDeclaration.html#Destroy">TBasicDeclaration.Destroy</a>
+<h3>Source</h3>
+defdriver.pas on line 368
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteOut"><hr></a>
+
+<h2>TBlockDeclaration.WriteOut</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteOut; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="defdriver__-TDeclaration.html#WriteOut">TDeclaration.WriteOut</a>
+<h3>Source</h3>
+defdriver.pas on line 369
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteOut">WriteOut</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="HasDeclarations"><hr></a>
+
+<h2>TBlockDeclaration.HasDeclarations</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> HasDeclarations : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 330
+</p><p>
+
+<h3>Description</h3>
+ Returns true if self contains some declarations, i.e. some declarations were declared in the block of self.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#HasDeclarations">HasDeclarations</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="LastDeclaration"><hr></a>
+
+<h2>TBlockDeclaration.LastDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> LastDeclaration : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TDeclaration.html">TDeclaration</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 333
+</p><p>
+
+<h3>Description</h3>
+ Returns the most recently added declaration or nil if self contains no declarations.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#LastDeclaration">LastDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FindDeclaration"><hr></a>
+
+<h2>TBlockDeclaration.FindDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> FindDeclaration(name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TDeclaration.html">TDeclaration</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 338
+</p><p>
+
+<h3>Description</h3>
+ Finds a declaration with the name <span class="local_symbol">name</span> in the declarations in the current block <em>only</em>.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#FindDeclaration">FindDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SearchDeclaration"><hr></a>
+
+<h2>TBlockDeclaration.SearchDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> SearchDeclaration(aname : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 344
+</p><p>
+
+<h3>Description</h3>
+ Searches a declaration in <em>all</em> declarations starting from self. Performs a breadth-first search on the whole tree of all declarations, treating it as a graph and starting from self. (In fact, AllDeclarations table is used to speed up the search, bu the effect is roughly the same).
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#SearchDeclaration">SearchDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FetchRelatedComment"><hr></a>
+
+<h2>TBlockDeclaration.FetchRelatedComment</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> FetchRelatedComment(aname : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TComment.html">TComment</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 350
+</p><p>
+
+<h3>Description</h3>
+ Fetches a related comment by calling SearchRelated.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#FetchRelatedComment">FetchRelatedComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="IsDerivedFrom"><hr></a>
+
+<h2>TBlockDeclaration.IsDerivedFrom</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> IsDerivedFrom(decl : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a></span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 352
+</p><p>
+
+<h3>Description</h3>
+ Returns true if <span class="local_symbol">decl</span> is present among the ancestors of self.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#IsDerivedFrom">IsDerivedFrom</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteFromHashTable"><hr></a>
+
+<h2>TBlockDeclaration.WriteFromHashTable</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteFromHashTable(table : </span><span class="program_code"><span class="global_symbol">TMap</span></span><span class="program_code">; heading : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 298
+</p><p>
+
+<h3>Description</h3>
+ Writes links to declarations which are associated in the table with the name of self. Writes a declaration only if it is either an immediate descendant of self or if self is an interface and the declaration implements it.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteFromHashTable">WriteFromHashTable</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FillMap"><hr></a>
+
+<h2>TBlockDeclaration.FillMap</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> FillMap(map : </span><span class="program_code"><span class="global_symbol">TMap</span></span><span class="program_code">; strs : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; decl : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TDeclaration.html">TDeclaration</a></span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 305
+</p><p>
+
+<h3>Description</h3>
+ <span class="local_symbol">map</span> Is a map of strings to TListAdt's. The procedure adds <span class="local_symbol">decl</span> to each list mapped to by one of the strings in <span class="local_symbol">strs</span>. If some strings in <span class="local_symbol">strs</span> does not have an associated item in <span class="local_symbol">map</span>, then creates a list for this item and inserts it into the map.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#FillMap">FillMap</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="StringsToDeclarations"><hr></a>
+
+<h2>TBlockDeclaration.StringsToDeclarations</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> StringsToDeclarations(</span><span class="program_code"><span class="keyword">var</span></span><span class="program_code"> decls : </span><span class="program_code"><span class="global_symbol">TArrayAdt</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">var</span></span><span class="program_code"> unrecognized : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">var</span></span><span class="program_code"> strs : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 312
+</p><p>
+
+<h3>Description</h3>
+ For each string in <span class="local_symbol">strs</span> tires to find a declaration with this name by calling SearchDeclaration. If found adds this declaration to decls, otherwise adds the string to unrecognized. If decls or unrecognized is nil then creates them. Destroys strs.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#StringsToDeclarations">StringsToDeclarations</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SortDeclarations"><hr></a>
+
+<h2>TBlockDeclaration.SortDeclarations</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> SortDeclarations;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 318
+</p><p>
+
+<h3>Description</h3>
+ Sorts <span class="local_symbol">decls</span> according to the symbolType field as the primary key and to the Name fileld as the secondary key.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#SortDeclarations">SortDeclarations</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteDeclarations"><hr></a>
+
+<h2>TBlockDeclaration.WriteDeclarations</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteDeclarations;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 326
+</p><p>
+
+<h3>Description</h3>
+ Writes out the declarations <span class="local_symbol">decl</span>. First writes a table with the synopsis'es of all the declarations. Then writes a navigation panel and then the declarations themselves. The argument should be a vector of TDeclaration objects. Decls must be non-nil. Parent is the delaration to which decls belong. If there is no such declaration (i.e. decls are unit-level declarations), then parent should be nil.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteDeclarations">WriteDeclarations</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="AddDeclaration"><hr></a>
+
+<h2>TBlockDeclaration.AddDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> AddDeclaration(decl : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TDeclaration.html">TDeclaration</a></span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 335
+</p><p>
+
+<h3>Description</h3>
+ Adds a declaration to the block declaration.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#AddDeclaration">AddDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SearchRelated"><hr></a>
+
+<h2>TBlockDeclaration.SearchRelated</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> SearchRelated(name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; decls : </span><span class="program_code"><span class="global_symbol">TArrayAdt</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 348
+</p><p>
+
+<h3>Description</h3>
+ Searches for the nearest methods above and including self in the class hierarchy and with the name <span class="local_symbol">name</span>. Adds found declarations to <span class="local_symbol">decls</span>.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#SearchRelated">SearchRelated</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="PushAncestorsAtFront"><hr></a>
+
+<h2>TBlockDeclaration.PushAncestorsAtFront</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> PushAncestorsAtFront(deque : </span><span class="program_code"><span class="global_symbol">TDequeAdt</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 355
+</p><p>
+
+<h3>Description</h3>
+ Should push all declarations considered to be ancestors of self at the front of <span class="local_symbol">deque</span>.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#PushAncestorsAtFront">PushAncestorsAtFront</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteHead"><hr></a>
+
+<h2>TBlockDeclaration.WriteHead</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteHead; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Related methods</h3>
+<a href="defdriver__-TDeclaration.html#WriteHead">TDeclaration.WriteHead</a>
+<h3>Source</h3>
+defdriver.pas on line 357
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteHead">WriteHead</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteMiddle"><hr></a>
+
+<h2>TBlockDeclaration.WriteMiddle</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteMiddle; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Related methods</h3>
+<a href="defdriver__-TDeclaration.html#WriteMiddle">TDeclaration.WriteMiddle</a>
+<h3>Source</h3>
+defdriver.pas on line 358
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteMiddle">WriteMiddle</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteTail"><hr></a>
+
+<h2>TBlockDeclaration.WriteTail</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteTail; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Related methods</h3>
+<a href="defdriver__-TDeclaration.html#WriteTail">TDeclaration.WriteTail</a>
+<h3>Source</h3>
+defdriver.pas on line 359
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html#WriteTail">WriteTail</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

@@ -1,0 +1,569 @@
+<html>
+<head>
+<title>Reference for TDocWriter</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TDocWriter</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TDocWriter = </span><span class="program_code"><span class="keyword">class</span></span></nobr>
+
+<h3>Visibility</h3>
+global
+</p><p>
+
+<h3>Immediate descendants</h3>
+<a href="htmlwriter__-THtmlWriter.html">THtmlWriter</a>
+<h3>Source</h3>
+commonclasses.pas on line 296
+</p><p>
+
+<h3>Description</h3>
+ An abstract interface of a documentation writer. It only returns the right type of a section, and the section does the main job.
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDocWriter.html#Create">Create</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Creates a writer.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterSection">RegisterSection</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Registeres a section named name.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterContentsSection">RegisterContentsSection</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Registeres a special section for the table of contents.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterClassTreeSection">RegisterClassTreeSection</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Registeres a special section for the tree of classes.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterInterfaceTreeSection">RegisterInterfaceTreeSection</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Registeres a special section for the tree of interfaces.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterSymbolIndexSection">RegisterSymbolIndexSection</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Registeres a special section for the index of symbols.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDocWriter.html#OutputDirectory">OutputDirectory</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html">TDocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="Create"><hr></a>
+
+<h2>TDocWriter.Create</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> Create(aOutputDir : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 303
+</p><p>
+
+<h3>Description</h3>
+ Creates a writer.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html#Create">Create</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html">TDocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterSection"><hr></a>
+
+<h2>TDocWriter.RegisterSection</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> RegisterSection(name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; parent : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; big : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 310
+</p><p>
+
+<h3>Description</h3>
+ Registeres a section named name. <span class="local_symbol">parent</span> Is the section which contains the registered section. Should be nil if no such section exists. If the section is expected to contain many subsections then <span class="local_symbol">big</span> should be true. Such a section is typically written to a separate file. The section returned by this function should be freed be the caller.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterSection">RegisterSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html">TDocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterContentsSection"><hr></a>
+
+<h2>TDocWriter.RegisterContentsSection</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> RegisterContentsSection : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 314
+</p><p>
+
+<h3>Description</h3>
+ Registeres a special section for the table of contents. The returned section should be destroyed by the caller.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterContentsSection">RegisterContentsSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html">TDocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterClassTreeSection"><hr></a>
+
+<h2>TDocWriter.RegisterClassTreeSection</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> RegisterClassTreeSection : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 317
+</p><p>
+
+<h3>Description</h3>
+ Registeres a special section for the tree of classes. The returned section should be destroyed by the caller.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterClassTreeSection">RegisterClassTreeSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html">TDocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterInterfaceTreeSection"><hr></a>
+
+<h2>TDocWriter.RegisterInterfaceTreeSection</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> RegisterInterfaceTreeSection : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 320
+</p><p>
+
+<h3>Description</h3>
+ Registeres a special section for the tree of interfaces. The returned section should be destroyed by the caller.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterInterfaceTreeSection">RegisterInterfaceTreeSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html">TDocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterSymbolIndexSection"><hr></a>
+
+<h2>TDocWriter.RegisterSymbolIndexSection</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> RegisterSymbolIndexSection : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 323
+</p><p>
+
+<h3>Description</h3>
+ Registeres a special section for the index of symbols. The returned section should be destroyed by the caller.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html#RegisterSymbolIndexSection">RegisterSymbolIndexSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html">TDocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="OutputDirectory"><hr></a>
+
+<h2>TDocWriter.OutputDirectory</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> OutputDirectory : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FOutputDir;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+commonclasses.pas on line 300
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html#OutputDirectory">OutputDirectory</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDocWriter.html">TDocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

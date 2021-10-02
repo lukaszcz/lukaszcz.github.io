@@ -1,0 +1,1337 @@
+<html>
+<head>
+<title>Reference for TDeclaration</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TDeclaration = </span><span class="program_code"><span class="keyword">class</span></span><span class="program_code">(TBasicDeclaration)</span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Immediate ancestor</h3>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p><p>
+
+<h3>Immediate descendants</h3>
+<a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a>
+<h3>Source</h3>
+defdriver.pas on line 227
+</p><p>
+
+<h3>Description</h3>
+ Represents a more specific notion of a declaration;.
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#Create">Create</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ <span class="local_symbol">acomment</span> May be nil to indicate no comment.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#CreateSimple">CreateSimple</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="15%">
+<p>
+destructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteOut">WriteOut</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#SymbolType">SymbolType</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#DeclText">DeclText</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ The text of the declaration.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#Visibility">Visibility</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Global, local, public, ...
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#VisibilityType">VisibilityType</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#Accessibility">Accessibility</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Read, write, ...
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#FileName">FileName</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#LineNum">LineNum</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#Comment">Comment</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#Title">Title</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteLinks">WriteLinks</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes out <span class="local_symbol">decls</span> as links separating them with commas.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteNavigationPanel">WriteNavigationPanel</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes a navigation panel.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#OpenSections">OpenSections</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Opens all requisite sections.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteHead">WriteHead</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes the beginning of the declaration.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteMiddle">WriteMiddle</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteTail">WriteTail</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes the closing part of the declaration (members + the navigation panel).
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="Create"><hr></a>
+
+<h2>TDeclaration.Create</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> Create(adecl : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">; asymbols : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; avisibility : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; avisibilityType : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TVisibilityType">TVisibilityType</a></span></span><span class="program_code">; asymboltype : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; alinenum : </span><span class="program_code"><span class="global_symbol">Cardinal</span></span><span class="program_code">; acomment : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TComment.html">TComment</a></span></span><span class="program_code">; asection : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; aparentDecl : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a></span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="defdriver__-TBasicDeclaration.html#Create">TBasicDeclaration.Create</a>
+<h3>Source</h3>
+defdriver.pas on line 267
+</p><p>
+
+<h3>Description</h3>
+ <span class="local_symbol">acomment</span> May be nil to indicate no comment.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#Create">Create</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="CreateSimple"><hr></a>
+
+<h2>TDeclaration.CreateSimple</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> CreateSimple(anames : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; asection : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; aparentDecl : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a></span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+defdriver.pas on line 272
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#CreateSimple">CreateSimple</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Destroy"><hr></a>
+
+<h2>TDeclaration.Destroy</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">destructor</span></span><span class="program_code"> Destroy; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="defdriver__-TBasicDeclaration.html#Destroy">TBasicDeclaration.Destroy</a>
+<h3>Source</h3>
+defdriver.pas on line 274
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteOut"><hr></a>
+
+<h2>TDeclaration.WriteOut</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteOut; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+defdriver.pas on line 275
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteOut">WriteOut</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SymbolType"><hr></a>
+
+<h2>TDeclaration.SymbolType</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">SymbolType : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 233
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#SymbolType">SymbolType</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="DeclText"><hr></a>
+
+<h2>TDeclaration.DeclText</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">DeclText : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 235
+</p><p>
+
+<h3>Description</h3>
+ The text of the declaration.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#DeclText">DeclText</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Visibility"><hr></a>
+
+<h2>TDeclaration.Visibility</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">Visibility : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 237
+</p><p>
+
+<h3>Description</h3>
+ Global, local, public, ...
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#Visibility">Visibility</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="VisibilityType"><hr></a>
+
+<h2>TDeclaration.VisibilityType</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">VisibilityType : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TVisibilityType">TVisibilityType</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 238
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#VisibilityType">VisibilityType</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Accessibility"><hr></a>
+
+<h2>TDeclaration.Accessibility</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">Accessibility : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 240
+</p><p>
+
+<h3>Description</h3>
+ Read, write, ... Used with properties only.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#Accessibility">Accessibility</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FileName"><hr></a>
+
+<h2>TDeclaration.FileName</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">FileName : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 241
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#FileName">FileName</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="LineNum"><hr></a>
+
+<h2>TDeclaration.LineNum</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">LineNum : </span><span class="program_code"><span class="global_symbol">Integer</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 242
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#LineNum">LineNum</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Comment"><hr></a>
+
+<h2>TDeclaration.Comment</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">Comment : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TComment.html">TComment</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 243
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#Comment">Comment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Title"><hr></a>
+
+<h2>TDeclaration.Title</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">Title : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 244
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#Title">Title</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteLinks"><hr></a>
+
+<h2>TDeclaration.WriteLinks</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteLinks(decls : </span><span class="program_code"><span class="global_symbol">TArrayAdt</span></span><span class="program_code">; unrecognized : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 249
+</p><p>
+
+<h3>Description</h3>
+ Writes out <span class="local_symbol">decls</span> as links separating them with commas. Also writes unrecognized as a plain text. <span class="local_symbol">decls</span> And <span class="local_symbol">unrecognized</span> must be non-nil.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteLinks">WriteLinks</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteNavigationPanel"><hr></a>
+
+<h2>TDeclaration.WriteNavigationPanel</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteNavigationPanel;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 255
+</p><p>
+
+<h3>Description</h3>
+ Writes a navigation panel. These are just several links for navigation purposes. Decl is the declaration after which the panel is written. Decl should be nil if it is a panel after the unit-level description.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteNavigationPanel">WriteNavigationPanel</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="OpenSections"><hr></a>
+
+<h2>TDeclaration.OpenSections</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> OpenSections;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 257
+</p><p>
+
+<h3>Description</h3>
+ Opens all requisite sections.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#OpenSections">OpenSections</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteHead"><hr></a>
+
+<h2>TDeclaration.WriteHead</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteHead; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 259
+</p><p>
+
+<h3>Description</h3>
+ Writes the beginning of the declaration.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteHead">WriteHead</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteMiddle"><hr></a>
+
+<h2>TDeclaration.WriteMiddle</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteMiddle; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 260
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteMiddle">WriteMiddle</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteTail"><hr></a>
+
+<h2>TDeclaration.WriteTail</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteTail; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 263
+</p><p>
+
+<h3>Description</h3>
+ Writes the closing part of the declaration (members + the navigation panel).
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html#WriteTail">WriteTail</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

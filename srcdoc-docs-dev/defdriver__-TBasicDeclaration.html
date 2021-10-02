@@ -1,0 +1,567 @@
+<html>
+<head>
+<title>Reference for TBasicDeclaration</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TBasicDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TBasicDeclaration = </span><span class="program_code"><span class="keyword">class</span></span></nobr>
+
+<h3>Visibility</h3>
+global
+</p><p>
+
+<h3>Immediate descendants</h3>
+<a href="defdriver__-TDeclaration.html">TDeclaration</a>
+<h3>Source</h3>
+defdriver.pas on line 202
+</p><p>
+
+<h3>Description</h3>
+ An abstract class representing a very general notion of a declaration. Units, linked text and comment files are all treated as such declarations. This class is sometimes instantiated for declarations that were written out and it is not necessary to store their data any more, except for some basic things present here.
+</p><p>
+ Note: the parent-child relationship represents the fact that the child is declared inside parent (i.e. as the member of a class, interface, unit, etc.).
+</p><p>
+ Note: declarations are uniquely identified by their sections, not by the Names field.
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#Create">Create</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="15%">
+<p>
+destructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#Names">Names</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Names of all the things declared.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#ParentDecl">ParentDecl</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ The declaration inside which self was declared.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#Section">Section</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ The section containing the declaration.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#IsBlockDeclaration">IsBlockDeclaration</a>
+</p>
+</td>
+<td width="15%">
+<p>
+field
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ This should be set in the constructor of TBlockDeclaration to true.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#QualifiedName">QualifiedName</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns the name of the declaration together with the scope qualifier.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="Create"><hr></a>
+
+<h2>TBasicDeclaration.Create</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> Create(anames : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; asection : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; aparent : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a></span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+defdriver.pas on line 221
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#Create">Create</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Destroy"><hr></a>
+
+<h2>TBasicDeclaration.Destroy</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">destructor</span></span><span class="program_code"> Destroy; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+defdriver.pas on line 223
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Names"><hr></a>
+
+<h2>TBasicDeclaration.Names</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">Names : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 205
+</p><p>
+
+<h3>Description</h3>
+ Names of all the things declared.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#Names">Names</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ParentDecl"><hr></a>
+
+<h2>TBasicDeclaration.ParentDecl</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">ParentDecl : </span><span class="program_code"><span class="global_symbol"><a href="defdriver__-TBlockDeclaration.html">TBlockDeclaration</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 209
+</p><p>
+
+<h3>Description</h3>
+ The declaration inside which self was declared. Nil if it is a root declaration (the root declaration must be of type TRootDeclaration)..
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#ParentDecl">ParentDecl</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Section"><hr></a>
+
+<h2>TBasicDeclaration.Section</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">Section : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 211
+</p><p>
+
+<h3>Description</h3>
+ The section containing the declaration.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#Section">Section</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="IsBlockDeclaration"><hr></a>
+
+<h2>TBasicDeclaration.IsBlockDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">IsBlockDeclaration : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 214
+</p><p>
+
+<h3>Description</h3>
+ This should be set in the constructor of TBlockDeclaration to true. Purely for efficiency reasons.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#IsBlockDeclaration">IsBlockDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="QualifiedName"><hr></a>
+
+<h2>TBasicDeclaration.QualifiedName</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> QualifiedName : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+defdriver.pas on line 218
+</p><p>
+
+<h3>Description</h3>
+ Returns the name of the declaration together with the scope qualifier.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html#QualifiedName">QualifiedName</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver__-TBasicDeclaration.html">TBasicDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="defdriver.html">defdriver</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

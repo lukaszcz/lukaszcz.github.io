@@ -1,0 +1,2465 @@
+<html>
+<head>
+<title>Reference for TDriver</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TDriver</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TDriver = </span><span class="program_code"><span class="keyword">class</span></span></nobr>
+
+<h3>Visibility</h3>
+global
+</p><p>
+
+<h3>Immediate descendants</h3>
+<a href="defdriver__-TDefaultDriver.html">TDefaultDriver</a>
+<h3>Source</h3>
+commonclasses.pas on line 387
+</p><p>
+
+<h3>Description</h3>
+ An abstract interface of a main program 'driver'. It performs all the basic high-level operations, parses comments, controls the generation of the document and provides the 'glue' to make everything work together. Drivers for specific languages should inherit from this class.
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Create">Create</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+<span class="local_symbol">asrcDirs</span> -  a list of directories to search for input files.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="15%">
+<p>
+destructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#RegisterUnit">RegisterUnit</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Registeres the unit currently being parsed.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#OpenUnit">OpenUnit</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Re-opens an already registered unit for parsing.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#FindSection">FindSection</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns the section of the given declaration name or nil if not found.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#OpenInputFile">OpenInputFile</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Opens a file for reading and returns a file stream for this file.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#ExistsInputFile">ExistsInputFile</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns true if a given file exists in one of the source directories.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#ValidateInputFile">ValidateInputFile</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Validates the input file.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Run">Run</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Runs the driver.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#RegisterFile">RegisterFile</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Registeres the given file to be processed.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#ProvideUnitInfo">ProvideUnitInfo</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Provides additional information on the unit currently being parsed.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#ProvideUnitImplementationInfo">ProvideUnitImplementationInfo</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Provides additional information on the implementation of the unit currently being parsed.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#RegisterDeclaration">RegisterDeclaration</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Registeres a declaration description.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#RegisterDeclarations">RegisterDeclarations</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ The same as above, but for multiple symbols in one declaration.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#StartClass">StartClass</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts registering a class declaration.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#FinishClass">FinishClass</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#StartInterface">StartInterface</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts registering an interface.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#FinishInterface">FinishInterface</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#SetIgnoreDeclarations">SetIgnoreDeclarations</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Indicated that <span class="local_symbol">num</span> following decalrations should be ignored.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Error">Error</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Prints an error message <span class="local_symbol">msg</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Error___overloaded___0">Error</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Prints an error message <span class="local_symbol">msg</span> not associated with any particular line, but associated with some file.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Error___overloaded___1">Error</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Prints an error message <span class="local_symbol">msg</span> not associated with any file.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#CommentError">CommentError</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Prints an error message <span class="local_symbol">msg</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Warn">Warn</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Prints a warning.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Warn___overloaded___0">Warn</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Prints a warning.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#CommentWarn">CommentWarn</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Prints a warning from inside a comment.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#WriteMessage">WriteMessage</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes a message.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#SetOption">SetOption</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Adds <span class="local_symbol">opt</span> to <span class="local_symbol">Options</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#ResetOption">ResetOption</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Removes <span class="local_symbol">opt</span> from <span class="local_symbol">Options</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#Options">Options</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#DocWriter">DocWriter</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#CommentParser">CommentParser</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#LanguageParser">LanguageParser</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#SetCommentParser">SetCommentParser</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Sets FCommentParser.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TDriver.html#SetLanguageParser">SetLanguageParser</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Sets FLanguageParser.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="Create"><hr></a>
+
+<h2>TDriver.Create</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> Create(aoptions : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TOptions">TOptions</a></span></span><span class="program_code">; adocwriter : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TDocWriter.html">TDocWriter</a></span></span><span class="program_code">; asrcDirs : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 406
+</p><p>
+
+<h3>Parameters</h3>
+<span class="local_symbol">aoptions</span> -  the global options.
+<br>
+<span class="local_symbol">adocwriter</span> -  the documentation writer to use.
+<br>
+<span class="local_symbol">asrcDirs</span> -  a list of directories to search for input files.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Create">Create</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Destroy"><hr></a>
+
+<h2>TDriver.Destroy</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">destructor</span></span><span class="program_code"> Destroy; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 408
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterUnit"><hr></a>
+
+<h2>TDriver.RegisterUnit</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> RegisterUnit(name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; unitComment : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 425
+</p><p>
+
+<h3>Parameters</h3>
+<span class="local_symbol">name</span> -  the name of the unit.
+<br>
+<span class="local_symbol">unitComment</span> -  the comment associated with the unit.
+</p><p>
+
+<h3>Description</h3>
+ Registeres the unit currently being parsed. This should be called as soon as the name of the unit is known and before anything else is registered. Returns true if the language parser should continue with parsing the unit, false if it should exit immediately.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#RegisterUnit">RegisterUnit</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="OpenUnit"><hr></a>
+
+<h2>TDriver.OpenUnit</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> OpenUnit(name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 431
+</p><p>
+
+<h3>Description</h3>
+ Re-opens an already registered unit for parsing. After calling this method all declarations are added to the opened unit. Returns true if the language parser should continue with parsing the unit, false if it should exit immediately.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#OpenUnit">OpenUnit</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FindSection"><hr></a>
+
+<h2>TDriver.FindSection</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> FindSection(name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 497
+</p><p>
+
+<h3>Description</h3>
+ Returns the section of the given declaration name or nil if not found.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#FindSection">FindSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="OpenInputFile"><hr></a>
+
+<h2>TDriver.OpenInputFile</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> OpenInputFile(</span><span class="program_code"><span class="keyword">const</span></span><span class="program_code"> path : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">TFileStream</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 524
+</p><p>
+
+<h3>Description</h3>
+ Opens a file for reading and returns a file stream for this file. Returns nil if could not open.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#OpenInputFile">OpenInputFile</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ExistsInputFile"><hr></a>
+
+<h2>TDriver.ExistsInputFile</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> ExistsInputFile(</span><span class="program_code"><span class="keyword">const</span></span><span class="program_code"> path : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 527
+</p><p>
+
+<h3>Description</h3>
+ Returns true if a given file exists in one of the source directories.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#ExistsInputFile">ExistsInputFile</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ValidateInputFile"><hr></a>
+
+<h2>TDriver.ValidateInputFile</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> ValidateInputFile(</span><span class="program_code"><span class="keyword">const</span></span><span class="program_code"> path : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 531
+</p><p>
+
+<h3>Description</h3>
+ Validates the input file. If it is a path to a file then adds the directory part to the source directories and returns the basename of the file.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#ValidateInputFile">ValidateInputFile</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Run"><hr></a>
+
+<h2>TDriver.Run</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Run(afilequeue : </span><span class="program_code"><span class="global_symbol">TStringDequeAdt</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 415
+</p><p>
+
+<h3>Description</h3>
+ Runs the driver. <span class="local_symbol">afilequeue</span> Is a queue of files to be processed. The queue is owned by the driver and disposed by it. It should contain files in the order in which they should be processed. The Run method should be called only once from the main program;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Run">Run</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterFile"><hr></a>
+
+<h2>TDriver.RegisterFile</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> RegisterFile(filename : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 417
+</p><p>
+
+<h3>Description</h3>
+ Registeres the given file to be processed.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#RegisterFile">RegisterFile</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ProvideUnitInfo"><hr></a>
+
+<h2>TDriver.ProvideUnitInfo</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> ProvideUnitInfo(ainterfaceUses : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 436
+</p><p>
+
+<h3>Parameters</h3>
+<span class="local_symbol">ainterfaceUses</span> -  the units the current unit uses in its interface.
+</p><p>
+
+<h3>Description</h3>
+ Provides additional information on the unit currently being parsed.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#ProvideUnitInfo">ProvideUnitInfo</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ProvideUnitImplementationInfo"><hr></a>
+
+<h2>TDriver.ProvideUnitImplementationInfo</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> ProvideUnitImplementationInfo(aimplUses : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; aunitImplComment : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 443
+</p><p>
+
+<h3>Parameters</h3>
+<span class="local_symbol">aimplUses</span> -  the units the current unit uses in its implementation.
+<br>
+<span class="local_symbol">aunitImplComment</span> -  the comment associated with the implementation of the unit.
+</p><p>
+
+<h3>Description</h3>
+ Provides additional information on the implementation of the unit currently being parsed.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#ProvideUnitImplementationInfo">ProvideUnitImplementationInfo</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterDeclaration"><hr></a>
+
+<h2>TDriver.RegisterDeclaration</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> RegisterDeclaration(decl : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">; symbol : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; args : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; visibility : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; visibilityType : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TVisibilityType">TVisibilityType</a></span></span><span class="program_code">; symboltype : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; linenum : </span><span class="program_code"><span class="global_symbol">Integer</span></span><span class="program_code">; comment : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 457
+</p><p>
+
+<h3>Description</h3>
+ Registeres a declaration description. Decl is the whole text of the declaration. It is the responsibility of the language parser to format this text and highlight keywords. Symbol is the name of the symbol being declared. Args is a list of arguments if the symbol is a routine, may be empty. Visibility is the visibility of the symbol. SymbolType is the type of the symbol, i.e. variable, function, procedure, etc. Linenum is the line number at which the declaration appears in the source file. Comment is the comment associated with the declaration. The declaration string may be later formatted inside the routine, as well as the comment string.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#RegisterDeclaration">RegisterDeclaration</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="RegisterDeclarations"><hr></a>
+
+<h2>TDriver.RegisterDeclarations</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> RegisterDeclarations(adecl : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">; asymbols : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; args : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; avisibility : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; avisibilityType : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TVisibilityType">TVisibilityType</a></span></span><span class="program_code">; asymboltype : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; alinenum : </span><span class="program_code"><span class="global_symbol">Integer</span></span><span class="program_code">; acomment : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 463
+</p><p>
+
+<h3>Description</h3>
+ The same as above, but for multiple symbols in one declaration.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#RegisterDeclarations">RegisterDeclarations</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="StartClass"><hr></a>
+
+<h2>TDriver.StartClass</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> StartClass(decl : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">; name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; ancestors : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; interfaces : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; visibility : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; visibilityType : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TVisibilityType">TVisibilityType</a></span></span><span class="program_code">; symboltype : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; linenum : </span><span class="program_code"><span class="global_symbol">Integer</span></span><span class="program_code">; comment : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 476
+</p><p>
+
+<h3>Description</h3>
+ Starts registering a class declaration. Decl is the full text of the class'es heading (not necessarily the whole declaration, but only the part including the class'es name and inheritance info). Ancestors is a list of the immediate ancestors of the class. Interfaces is a list of the interfaced implemented by the class. <span class="local_symbol">linenum</span> Is the line number at which the declaration appears in the source file. Comment is the comment associated with the class;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#StartClass">StartClass</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FinishClass"><hr></a>
+
+<h2>TDriver.FinishClass</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> FinishClass; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 481
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#FinishClass">FinishClass</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="StartInterface"><hr></a>
+
+<h2>TDriver.StartInterface</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> StartInterface(decl : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">; name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; ancestors : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; id : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; visibility : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; visibilityType : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TVisibilityType">TVisibilityType</a></span></span><span class="program_code">; symboltype : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; linenum : </span><span class="program_code"><span class="global_symbol">Integer</span></span><span class="program_code">; comment : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 485
+</p><p>
+
+<h3>Description</h3>
+ Starts registering an interface. Id is an optional id of the interface. In delphi it is the GUID of the interface.
+</p><p>
+
+<h3>See also</h3>
+<a href="commonclasses__-TDriver.html#StartClass">StartClass</a>
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#StartInterface">StartInterface</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FinishInterface"><hr></a>
+
+<h2>TDriver.FinishInterface</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> FinishInterface; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 491
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#FinishInterface">FinishInterface</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SetIgnoreDeclarations"><hr></a>
+
+<h2>TDriver.SetIgnoreDeclarations</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> SetIgnoreDeclarations(num : </span><span class="program_code"><span class="global_symbol">Cardinal</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 494
+</p><p>
+
+<h3>Description</h3>
+ Indicated that <span class="local_symbol">num</span> following decalrations should be ignored.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#SetIgnoreDeclarations">SetIgnoreDeclarations</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Error"><hr></a>
+
+<h2>TDriver.Error</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Error(msg, filename : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; linenum : </span><span class="program_code"><span class="global_symbol">Cardinal</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 501
+</p><p>
+
+<h3>Description</h3>
+ Prints an error message <span class="local_symbol">msg</span>. If there have been too many errors raises an exception.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Error">Error</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Error___overloaded___0"><hr></a>
+
+<h2>TDriver.Error</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Error(msg, filename : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 506
+</p><p>
+
+<h3>Description</h3>
+ Prints an error message <span class="local_symbol">msg</span> not associated with any particular line, but associated with some file. If there have been too many errors raises an exception.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Error___overloaded___0">Error</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Error___overloaded___1"><hr></a>
+
+<h2>TDriver.Error</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Error(msg : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 509
+</p><p>
+
+<h3>Description</h3>
+ Prints an error message <span class="local_symbol">msg</span> not associated with any file. If there have been too many errors raises an exception.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Error___overloaded___1">Error</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="CommentError"><hr></a>
+
+<h2>TDriver.CommentError</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> CommentError(msg : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 512
+</p><p>
+
+<h3>Description</h3>
+ Prints an error message <span class="local_symbol">msg</span>. Use this method if the error is encountered inside a comment.
+</p><p>
+
+<h3>See also</h3>
+<a href="commonclasses__-TDriver.html#Error">Error</a>, 
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#CommentError">CommentError</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Warn"><hr></a>
+
+<h2>TDriver.Warn</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Warn(msg, filename : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; line : </span><span class="program_code"><span class="global_symbol">Integer</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 514
+</p><p>
+
+<h3>Description</h3>
+ Prints a warning.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Warn">Warn</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Warn___overloaded___0"><hr></a>
+
+<h2>TDriver.Warn</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Warn(msg : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 515
+</p><p>
+
+<h3>Description</h3>
+ Prints a warning.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Warn___overloaded___0">Warn</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="CommentWarn"><hr></a>
+
+<h2>TDriver.CommentWarn</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> CommentWarn(msg : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 517
+</p><p>
+
+<h3>Description</h3>
+ Prints a warning from inside a comment.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#CommentWarn">CommentWarn</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteMessage"><hr></a>
+
+<h2>TDriver.WriteMessage</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteMessage(msg : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 520
+</p><p>
+
+<h3>Description</h3>
+ Writes a message. Messages are written only if <span class="local_symbol">optVerbose</span> is in <a href="commonclasses__-TDriver.html#Options">Options</a>.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#WriteMessage">WriteMessage</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SetOption"><hr></a>
+
+<h2>TDriver.SetOption</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> SetOption(opt : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TOption">TOption</a></span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 533
+</p><p>
+
+<h3>Description</h3>
+ Adds <span class="local_symbol">opt</span> to <span class="local_symbol">Options</span>.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#SetOption">SetOption</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ResetOption"><hr></a>
+
+<h2>TDriver.ResetOption</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> ResetOption(opt : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TOption">TOption</a></span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 535
+</p><p>
+
+<h3>Description</h3>
+ Removes <span class="local_symbol">opt</span> from <span class="local_symbol">Options</span>.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#ResetOption">ResetOption</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Options"><hr></a>
+
+<h2>TDriver.Options</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> Options : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TOptions">TOptions</a></span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FOptions;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 537
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#Options">Options</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="DocWriter"><hr></a>
+
+<h2>TDriver.DocWriter</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> DocWriter : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TDocWriter.html">TDocWriter</a></span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FDocWriter;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 538
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#DocWriter">DocWriter</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="CommentParser"><hr></a>
+
+<h2>TDriver.CommentParser</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> CommentParser : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TCommentParser.html">TCommentParser</a></span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FCommentParser;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 539
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#CommentParser">CommentParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="LanguageParser"><hr></a>
+
+<h2>TDriver.LanguageParser</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> LanguageParser : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TLanguageParser.html">TLanguageParser</a></span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FLanguageParser;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 540
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#LanguageParser">LanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SetCommentParser"><hr></a>
+
+<h2>TDriver.SetCommentParser</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> SetCommentParser(arg : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TCommentParser.html">TCommentParser</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+commonclasses.pas on line 397
+</p><p>
+
+<h3>Description</h3>
+ Sets FCommentParser. Destroyes the object previously stored there.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#SetCommentParser">SetCommentParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SetLanguageParser"><hr></a>
+
+<h2>TDriver.SetLanguageParser</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> SetLanguageParser(arg : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TLanguageParser.html">TLanguageParser</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+commonclasses.pas on line 399
+</p><p>
+
+<h3>Description</h3>
+ Sets FLanguageParser. Destroyes the object previously stored there.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html#SetLanguageParser">SetLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TDriver.html">TDriver</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

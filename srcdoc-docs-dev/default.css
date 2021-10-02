@@ -1,0 +1,19 @@
+.program_code {font-family : monospace}
+.keyword {color : green}
+.local_symbol {text-decoration : underline}
+.fixed_pitch {font-family : monospace}
+ul li {list-style : disc}
+ul ul li {list-style : circle}
+ul ul ul li {list-style : square}
+ul ul ul ul li {list-style : disc}
+ul ul ul ul ul li {list-style : circle}
+ul ul ul ul ul ul li {list-style : square}
+ul ul ul ul ul ul ul li {list-style : disc}
+ul ul ul ul ul ul ul ul li {list-style : circle}
+ul ul ul ul ul ul ul ul ul li {list-style : square}
+ul ul ul ul ul ul ul ul ul ul li {list-style : disc}
+ul ul ul ul ul ul ul ul ul ul ul li {list-style : circle}
+ul ul ul ul ul ul ul ul ul ul ul ul li {list-style : square}
+ul ul ul ul ul ul ul ul ul ul ul ul ul li {list-style : disc}
+ul ul ul ul ul ul ul ul ul ul ul ul ul ul li {list-style : circle}
+ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul li {list-style : square}

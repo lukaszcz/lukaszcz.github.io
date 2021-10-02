@@ -1,0 +1,1279 @@
+<html>
+<head>
+<title>Reference for THtmlSection</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>THtmlSection</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">THtmlSection = </span><span class="program_code"><span class="keyword">class</span></span><span class="program_code">(TSection)</span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Immediate ancestor</h3>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p><p>
+
+<h3>Immediate descendants</h3>
+<a href="htmlwriter__-THtmlSubSection.html">THtmlSubSection</a>, <a href="htmlwriter__-THtmlFileSection.html">THtmlFileSection</a>
+<h3>Source</h3>
+htmlwriter.pas on line 32
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#Create">Create</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#WriteText">WriteText</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes out <span class="local_symbol">text</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#WriteLink">WriteLink</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes out a link to a section.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#WriteHeading">WriteHeading</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes a heading.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NewParagraph">NewParagraph</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Begins a new paragraph.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NewLine">NewLine</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Begins a new line.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#Indent">Indent</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Makes an indentation.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#StartTable">StartTable</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts writing a table.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NextCell">NextCell</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Moves to the next cell in the current row in the table being currently writed out.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NextRow">NextRow</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts a new row.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#FinishTable">FinishTable</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Finishes writing a table.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#StartList">StartList</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts writing a list.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NextListItem">NextListItem</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts writing the next item in the current list.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#FinishList">FinishList</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Finished writing a list;.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#SuppressLineBreaking">SuppressLineBreaking</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Suppresses automatic line breaking (not for all formats).
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#ResumeLineBreaking">ResumeLineBreaking</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Resumes automatic line breaking (not for all formats).
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#Stream">Stream</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+protected
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns the stream to which the section should be written.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="Create"><hr></a>
+
+<h2>THtmlSection.Create</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> Create(aname, asectionPath : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#Create">TSection.Create</a>
+<h3>Source</h3>
+htmlwriter.pas on line 56
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#Create">Create</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteText"><hr></a>
+
+<h2>THtmlSection.WriteText</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteText(text : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; attr : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TTextAttributeSet">TTextAttributeSet</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#WriteText">TSection.WriteText</a>
+<h3>Source</h3>
+htmlwriter.pas on line 60
+</p><p>
+
+<h3>Description</h3>
+ Writes out <span class="local_symbol">text</span>. <span class="local_symbol">attr</span> Are the attributes of the text. <span class="local_symbol">highlight</span> Is true if the text should be highlighted.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#WriteText">WriteText</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteLink"><hr></a>
+
+<h2>THtmlSection.WriteLink</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteLink(descr : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; section : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#WriteLink">TSection.WriteLink</a>
+<h3>Source</h3>
+htmlwriter.pas on line 65
+</p><p>
+
+<h3>Description</h3>
+ Writes out a link to a section. If <span class="local_symbol">section</span> is nil then writes it as a plain text. Uses <span class="local_symbol">descr</span> as a label for the link.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#WriteLink">WriteLink</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteHeading"><hr></a>
+
+<h2>THtmlSection.WriteHeading</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteHeading(</span><span class="program_code"><span class="keyword">const</span></span><span class="program_code"> text : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; size : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TSize">TSize</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#WriteHeading">TSection.WriteHeading</a>
+<h3>Source</h3>
+htmlwriter.pas on line 68
+</p><p>
+
+<h3>Description</h3>
+ Writes a heading. Size may be a number 1 through 6, where 1 is the largest, 6 the smallest. A heading begins a new paragraph.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#WriteHeading">WriteHeading</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NewParagraph"><hr></a>
+
+<h2>THtmlSection.NewParagraph</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NewParagraph; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#NewParagraph">TSection.NewParagraph</a>
+<h3>Source</h3>
+htmlwriter.pas on line 70
+</p><p>
+
+<h3>Description</h3>
+ Begins a new paragraph.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NewParagraph">NewParagraph</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NewLine"><hr></a>
+
+<h2>THtmlSection.NewLine</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NewLine; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#NewLine">TSection.NewLine</a>
+<h3>Source</h3>
+htmlwriter.pas on line 72
+</p><p>
+
+<h3>Description</h3>
+ Begins a new line.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NewLine">NewLine</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Indent"><hr></a>
+
+<h2>THtmlSection.Indent</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Indent; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#Indent">TSection.Indent</a>
+<h3>Source</h3>
+htmlwriter.pas on line 74
+</p><p>
+
+<h3>Description</h3>
+ Makes an indentation.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#Indent">Indent</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="StartTable"><hr></a>
+
+<h2>THtmlSection.StartTable</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> StartTable(</span><span class="program_code"><span class="keyword">const</span></span><span class="program_code"> widths : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TIntegerArray">TIntegerArray</a></span></span><span class="program_code">; cols : </span><span class="program_code"><span class="global_symbol">Integer</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#StartTable">TSection.StartTable</a>
+<h3>Source</h3>
+htmlwriter.pas on line 80
+</p><p>
+
+<h3>Description</h3>
+ Starts writing a table. Cols is the number of columns. Widths should contain cols entries with the width of each column (in the percentage of the width of the whole table). After calling this routine the next output will be written in the first cell of the table.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#StartTable">StartTable</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NextCell"><hr></a>
+
+<h2>THtmlSection.NextCell</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NextCell; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#NextCell">TSection.NextCell</a>
+<h3>Source</h3>
+htmlwriter.pas on line 85
+</p><p>
+
+<h3>Description</h3>
+ Moves to the next cell in the current row in the table being currently writed out. If there is no next cell in the current row then does nothing.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NextCell">NextCell</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NextRow"><hr></a>
+
+<h2>THtmlSection.NextRow</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NextRow; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#NextRow">TSection.NextRow</a>
+<h3>Source</h3>
+htmlwriter.pas on line 87
+</p><p>
+
+<h3>Description</h3>
+ Starts a new row.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NextRow">NextRow</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FinishTable"><hr></a>
+
+<h2>THtmlSection.FinishTable</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> FinishTable; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#FinishTable">TSection.FinishTable</a>
+<h3>Source</h3>
+htmlwriter.pas on line 90
+</p><p>
+
+<h3>Description</h3>
+ Finishes writing a table. If the last row contains no data then it is discarded.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#FinishTable">FinishTable</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="StartList"><hr></a>
+
+<h2>THtmlSection.StartList</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> StartList(numbered : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#StartList">TSection.StartList</a>
+<h3>Source</h3>
+htmlwriter.pas on line 93
+</p><p>
+
+<h3>Description</h3>
+ Starts writing a list. The list is numbered if <span class="local_symbol">numbered</span> is true.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#StartList">StartList</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NextListItem"><hr></a>
+
+<h2>THtmlSection.NextListItem</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NextListItem; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#NextListItem">TSection.NextListItem</a>
+<h3>Source</h3>
+htmlwriter.pas on line 95
+</p><p>
+
+<h3>Description</h3>
+ Starts writing the next item in the current list.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#NextListItem">NextListItem</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FinishList"><hr></a>
+
+<h2>THtmlSection.FinishList</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> FinishList; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#FinishList">TSection.FinishList</a>
+<h3>Source</h3>
+htmlwriter.pas on line 97
+</p><p>
+
+<h3>Description</h3>
+ Finished writing a list;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#FinishList">FinishList</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SuppressLineBreaking"><hr></a>
+
+<h2>THtmlSection.SuppressLineBreaking</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> SuppressLineBreaking; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#SuppressLineBreaking">TSection.SuppressLineBreaking</a>
+<h3>Source</h3>
+htmlwriter.pas on line 99
+</p><p>
+
+<h3>Description</h3>
+ Suppresses automatic line breaking (not for all formats).
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#SuppressLineBreaking">SuppressLineBreaking</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ResumeLineBreaking"><hr></a>
+
+<h2>THtmlSection.ResumeLineBreaking</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> ResumeLineBreaking; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TSection.html#ResumeLineBreaking">TSection.ResumeLineBreaking</a>
+<h3>Source</h3>
+htmlwriter.pas on line 101
+</p><p>
+
+<h3>Description</h3>
+ Resumes automatic line breaking (not for all formats).
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#ResumeLineBreaking">ResumeLineBreaking</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Stream"><hr></a>
+
+<h2>THtmlSection.Stream</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> Stream : </span><span class="program_code"><span class="global_symbol">TFileStream</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+protected
+<h3>Source</h3>
+htmlwriter.pas on line 53
+</p><p>
+
+<h3>Description</h3>
+ Returns the stream to which the section should be written.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html#Stream">Stream</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="htmlwriter.html">htmlwriter</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

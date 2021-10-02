@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Basic comment formatting</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="SrcDoc documentation"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="What is SrcDoc?"
+HREF="c3.html"><LINK
+REL="NEXT"
+TITLE="Invoking SrcDoc"
+HREF="c24.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>SrcDoc documentation</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c3.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c24.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="BASICCMTFORM"
+></A
+>Chapter 2. Basic comment formatting</H1
+><P
+>&#13;A comment must be placed just before the declaration which it
+describes. By default, adjoining comments separated only be whitespace
+are joined into one comment. This behaviour may be controlled by the
+--join-comments command line switch. See <A
+HREF="c57.html"
+>command line options</A
+>.&#13;</P
+><P
+>&#13;Comments may be formatted by means of comment-commands. A
+comment-command starts with '@' followed by the command name. Command
+names are not case-sensitive. &#13;</P
+><P
+>&#13;If no commands are present in the whole comment, then the comment is
+simply written under the heading 'Description'. By default, the first
+sentence is used as the synopsis. The synopsis may be also specified
+by the <A
+HREF="x131.html#CMDSYNOPSIS"
+>@synopsis</A
+> command.&#13;</P
+><P
+>&#13;Commands may be divided into three groups: section commands, inline
+commands and comment-start commands.&#13;</P
+><P
+>&#13; Section commands begin a new section - typically a new
+paragraph. Everything after a section command falls into the new
+section. The old one is finished. If an unknown command is
+encountered, a warning is issued and a new section is started with the
+name of the unrecognized command, capitalized and with '-' and '_'
+changed into space, as the heading for the section.&#13;</P
+><P
+>&#13;One of the most common section commands is probably the @see
+command. It begins a new section of whitespace- or comma-separated
+names of identifiers, which are displayed as links under the heading
+'See also'.&#13;</P
+><P
+>&#13;Inline commands appear inside a section and don't terminate it. Two of
+these commands are, for instance, @code and @end-code. These two
+commands are used to indicate that the text between them is a program
+code.&#13;</P
+><P
+>&#13;Comment-start commant are interpreted only if they appear at the very
+start of the comment. The '@' character must be the first character of
+the comment. There are currently only two such commands: @discard,
+which causes the comment to be discarded, and @decl, which makes the
+rest of the comment be treated like a declaration.&#13;</P
+><P
+>&#13;Comment-start commands, in contrast to the other two flavours of
+commands, apply only to one comment as found in a source file,
+regardless of whether adjoining comments are to be joined or not.&#13;</P
+><P
+>&#13;It is worth noting that if you place an ordinary command at the very
+beginning of the comment, it will be tried to be interpreted as a
+comment-start command and an error will occur.&#13;</P
+><P
+>&#13;For more details on available commands and their complete list see the
+<A
+HREF="c123.html"
+>command list</A
+>.&#13;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c3.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c24.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>What is SrcDoc?</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Invoking SrcDoc</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

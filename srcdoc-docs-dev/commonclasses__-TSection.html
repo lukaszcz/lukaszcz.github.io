@@ -1,0 +1,1515 @@
+<html>
+<head>
+<title>Reference for TSection</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TSection</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TSection = </span><span class="program_code"><span class="keyword">class</span></span></nobr>
+
+<h3>Visibility</h3>
+global
+</p><p>
+
+<h3>Immediate descendants</h3>
+<a href="htmlwriter__-THtmlSection.html">THtmlSection</a>
+<h3>Source</h3>
+commonclasses.pas on line 223
+</p><p>
+
+<h3>Description</h3>
+ Represents an output section. Each section should correspond to a single syntatic unit (a module, class, routine declaration, ...)..
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#Create">Create</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#Open">Open</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Opens the section for writing.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#Open___overloaded___0">Open</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ The same as above, but passes '' as the title.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#Close">Close</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Closes the section.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#WriteText">WriteText</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes out <span class="local_symbol">text</span>.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#WriteText___overloaded___0">WriteText</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ The same as above but assumes attr = [].
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#WriteLink">WriteLink</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes out a link to a section.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#WriteHeading">WriteHeading</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Writes a heading.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#NewParagraph">NewParagraph</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Begins a new paragraph.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#NewLine">NewLine</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Begins a new line.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#Indent">Indent</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Makes an indentation.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#StartTable">StartTable</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts writing a table.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#NextCell">NextCell</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Moves to the next cell in the current row in the table being currently writed out.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#NextRow">NextRow</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts a new row.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#FinishTable">FinishTable</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Finishes writing a table.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#StartList">StartList</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts writing a list.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#NextListItem">NextListItem</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Starts writing the next item in the current list.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#FinishList">FinishList</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Finished writing a list;.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#SuppressLineBreaking">SuppressLineBreaking</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Suppresses automatic line breaking (not for all formats).
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#ResumeLineBreaking">ResumeLineBreaking</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Resumes automatic line breaking (not for all formats).
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TSection.html#Name">Name</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="Create"><hr></a>
+
+<h2>TSection.Create</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> Create(aname : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 228
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#Create">Create</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Open"><hr></a>
+
+<h2>TSection.Open</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Open(title : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 235
+</p><p>
+
+<h3>Description</h3>
+ Opens the section for writing. Only <em>one</em> from <em>all</em> sections may be opened at a time. The methods writing to the output may be invoked only after calling Open and before calling Close. <span class="local_symbol">title</span> Is the section title. It may be taken into account or completely disregarded.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#Open">Open</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Open___overloaded___0"><hr></a>
+
+<h2>TSection.Open</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Open;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 237
+</p><p>
+
+<h3>Description</h3>
+ The same as above, but passes '' as the title.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#Open___overloaded___0">Open</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Close"><hr></a>
+
+<h2>TSection.Close</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Close; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 240
+</p><p>
+
+<h3>Description</h3>
+ Closes the section. The section may not be written to any more, nor may it be re-opened earlier.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#Close">Close</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteText"><hr></a>
+
+<h2>TSection.WriteText</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteText(text : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; attr : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TTextAttributeSet">TTextAttributeSet</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 245
+</p><p>
+
+<h3>Description</h3>
+ Writes out <span class="local_symbol">text</span>. <span class="local_symbol">attr</span> Are the attributes of the text. <span class="local_symbol">highlight</span> Is true if the text should be highlighted.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#WriteText">WriteText</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteText___overloaded___0"><hr></a>
+
+<h2>TSection.WriteText</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteText(</span><span class="program_code"><span class="keyword">const</span></span><span class="program_code"> text : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 248
+</p><p>
+
+<h3>Description</h3>
+ The same as above but assumes attr = [].
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#WriteText___overloaded___0">WriteText</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteLink"><hr></a>
+
+<h2>TSection.WriteLink</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteLink(descr : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; section : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 252
+</p><p>
+
+<h3>Description</h3>
+ Writes out a link to a section. If <span class="local_symbol">section</span> is nil writes <span class="local_symbol">descr</span> as a plain text. Uses <span class="local_symbol">descr</span> as a label for the link.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#WriteLink">WriteLink</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteHeading"><hr></a>
+
+<h2>TSection.WriteHeading</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteHeading(</span><span class="program_code"><span class="keyword">const</span></span><span class="program_code"> text : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; size : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TSize">TSize</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 255
+</p><p>
+
+<h3>Description</h3>
+ Writes a heading. Size may be a number 1 through 6, where 1 is the largest, 6 the smallest. A heading begins a new paragraph.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#WriteHeading">WriteHeading</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NewParagraph"><hr></a>
+
+<h2>TSection.NewParagraph</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NewParagraph; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 258
+</p><p>
+
+<h3>Description</h3>
+ Begins a new paragraph.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#NewParagraph">NewParagraph</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NewLine"><hr></a>
+
+<h2>TSection.NewLine</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NewLine; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 260
+</p><p>
+
+<h3>Description</h3>
+ Begins a new line.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#NewLine">NewLine</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Indent"><hr></a>
+
+<h2>TSection.Indent</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> Indent; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 263
+</p><p>
+
+<h3>Description</h3>
+ Makes an indentation. For one line only. This should be called just after calling NewLine.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#Indent">Indent</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="StartTable"><hr></a>
+
+<h2>TSection.StartTable</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> StartTable(</span><span class="program_code"><span class="keyword">const</span></span><span class="program_code"> widths : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses.html#TIntegerArray">TIntegerArray</a></span></span><span class="program_code">; cols : </span><span class="program_code"><span class="global_symbol">Integer</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 269
+</p><p>
+
+<h3>Description</h3>
+ Starts writing a table. Cols is the number of columns. Widths should contain cols entries with the width of each column (in the percentage of the width of the whole table). After calling this routine the next output will be written in the first cell of the table.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#StartTable">StartTable</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NextCell"><hr></a>
+
+<h2>TSection.NextCell</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NextCell; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 274
+</p><p>
+
+<h3>Description</h3>
+ Moves to the next cell in the current row in the table being currently writed out. If there is no next cell in the current row then does nothing.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#NextCell">NextCell</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NextRow"><hr></a>
+
+<h2>TSection.NextRow</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NextRow; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 276
+</p><p>
+
+<h3>Description</h3>
+ Starts a new row.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#NextRow">NextRow</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FinishTable"><hr></a>
+
+<h2>TSection.FinishTable</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> FinishTable; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 279
+</p><p>
+
+<h3>Description</h3>
+ Finishes writing a table. If the last row contains no data then it is discarded.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#FinishTable">FinishTable</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="StartList"><hr></a>
+
+<h2>TSection.StartList</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> StartList(numbered : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 282
+</p><p>
+
+<h3>Description</h3>
+ Starts writing a list. The list is numbered if <span class="local_symbol">numbered</span> is true.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#StartList">StartList</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="NextListItem"><hr></a>
+
+<h2>TSection.NextListItem</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> NextListItem; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 284
+</p><p>
+
+<h3>Description</h3>
+ Starts writing the next item in the current list.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#NextListItem">NextListItem</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FinishList"><hr></a>
+
+<h2>TSection.FinishList</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> FinishList; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 286
+</p><p>
+
+<h3>Description</h3>
+ Finished writing a list;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#FinishList">FinishList</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="SuppressLineBreaking"><hr></a>
+
+<h2>TSection.SuppressLineBreaking</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> SuppressLineBreaking; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 288
+</p><p>
+
+<h3>Description</h3>
+ Suppresses automatic line breaking (not for all formats).
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#SuppressLineBreaking">SuppressLineBreaking</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ResumeLineBreaking"><hr></a>
+
+<h2>TSection.ResumeLineBreaking</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> ResumeLineBreaking; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 290
+</p><p>
+
+<h3>Description</h3>
+ Resumes automatic line breaking (not for all formats).
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#ResumeLineBreaking">ResumeLineBreaking</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Name"><hr></a>
+
+<h2>TSection.Name</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> Name : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FName;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 291
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html#Name">Name</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TSection.html">TSection</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

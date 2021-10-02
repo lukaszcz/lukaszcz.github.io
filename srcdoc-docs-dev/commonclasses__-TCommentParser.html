@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Reference for TCommentParser</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TCommentParser</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TCommentParser = </span><span class="program_code"><span class="keyword">class</span></span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Source</h3>
+commonclasses.pas on line 374
+</p><p>
+
+<h3>Description</h3>
+ Parses comments. The only comments it does not parse are those beginning with a @. They are handled by TLanguageParser..
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TCommentParser.html#ParseComment">ParseComment</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Parses a comment.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TCommentParser.html">TCommentParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="ParseComment"><hr></a>
+
+<h2>TCommentParser.ParseComment</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> ParseComment(comment : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TComment.html">TComment</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 379
+</p><p>
+
+<h3>Description</h3>
+ Parses a comment. May invoke some Driver's methods if encounters commands that require it. May return nil if the passed string is empty;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TCommentParser.html#ParseComment">ParseComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TCommentParser.html">TCommentParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<html>
+<head>
+<title>Reference for TLanguageParser</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TLanguageParser</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TLanguageParser = </span><span class="program_code"><span class="keyword">class</span></span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Source</h3>
+commonclasses.pas on line 329
+</p><p>
+
+<h3>Description</h3>
+ Parses input files. Parsing comments is done by TCommentParser, except for the comment-start commands, which are recognized and parsed by TLanguageParser..
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#GetDependencies">GetDependencies</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns a list of all files on which the unit or program in <span class="local_symbol">afile</span> depends.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#GetImplementationDependencies">GetImplementationDependencies</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns a list of files on which the implementation of the module in <span class="local_symbol">afile</span> depends.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ParseIdentifierRef">ParseIdentifierRef</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Converts a qualified reference to an identifier into a reference to a section within TDocWriter.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ParseCode">ParseCode</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Parses a piece of code converting it to a TTextObject.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ScopeResolutionToken">ScopeResolutionToken</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns the token used for scope resolution.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#IgnoreCase">IgnoreCase</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns true if the case of identifiers is insignificant.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ParseFile">ParseFile</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Parses a file;.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ParseImplementation">ParseImplementation</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Parses an implementation of a given file if the file has a separate implementation.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="GetDependencies"><hr></a>
+
+<h2>TLanguageParser.GetDependencies</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> GetDependencies(afile : </span><span class="program_code"><span class="global_symbol">TFileStream</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 351
+</p><p>
+
+<h3>Description</h3>
+ Returns a list of all files on which the unit or program in <span class="local_symbol">afile</span> depends. If the implementation and the interface reside in the same file it should retrun a list of the interface dependencies. The result should be destroyed by the caller.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#GetDependencies">GetDependencies</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="GetImplementationDependencies"><hr></a>
+
+<h2>TLanguageParser.GetImplementationDependencies</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> GetImplementationDependencies(afile : </span><span class="program_code"><span class="global_symbol">TFileStream</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 359
+</p><p>
+
+<h3>Description</h3>
+ Returns a list of files on which the implementation of the module in <span class="local_symbol">afile</span> depends. If the implementation is <em>not</em> in the same file as the interface, then this method should return an empty list and GetDependencies should return <em>all</em> dependencies for a given file, regardless of whether the file is an interface or an implementation file. The result should be destroyed by the caller;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#GetImplementationDependencies">GetImplementationDependencies</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ParseIdentifierRef"><hr></a>
+
+<h2>TLanguageParser.ParseIdentifierRef</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> ParseIdentifierRef(ref : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 363
+</p><p>
+
+<h3>Description</h3>
+ Converts a qualified reference to an identifier into a reference to a section within TDocWriter.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ParseIdentifierRef">ParseIdentifierRef</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ParseCode"><hr></a>
+
+<h2>TLanguageParser.ParseCode</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> ParseCode(code : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 365
+</p><p>
+
+<h3>Description</h3>
+ Parses a piece of code converting it to a TTextObject.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ParseCode">ParseCode</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ScopeResolutionToken"><hr></a>
+
+<h2>TLanguageParser.ScopeResolutionToken</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> ScopeResolutionToken : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 367
+</p><p>
+
+<h3>Description</h3>
+ Returns the token used for scope resolution.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ScopeResolutionToken">ScopeResolutionToken</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="IgnoreCase"><hr></a>
+
+<h2>TLanguageParser.IgnoreCase</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> IgnoreCase : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 369
+</p><p>
+
+<h3>Description</h3>
+ Returns true if the case of identifiers is insignificant.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#IgnoreCase">IgnoreCase</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ParseFile"><hr></a>
+
+<h2>TLanguageParser.ParseFile</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> ParseFile(afile : </span><span class="program_code"><span class="global_symbol">TFileStream</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 332
+</p><p>
+
+<h3>Description</h3>
+ Parses a file;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ParseFile">ParseFile</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="ParseImplementation"><hr></a>
+
+<h2>TLanguageParser.ParseImplementation</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> ParseImplementation(afile : </span><span class="program_code"><span class="global_symbol">TFileStream</span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">virtual</span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">abstract</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 345
+</p><p>
+
+<h3>Description</h3>
+ Parses an implementation of a given file if the file has a separate implementation. If the interface and the implementation reside both in the same file (like in pascal/Delphi) then ParseFile should parse the interface only and ParseImplementation the implementation part. If the implementation is in a separate file (like in C/C++) then this should register this file to be parsed via Driver.RegisterFile. It should not parse the file in this case, since the file may have already been parsed and it would be parsed twice, but instead ParseFile should parse whole files regardless of whether they are an interface or an implementation;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html#ParseImplementation">ParseImplementation</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TLanguageParser.html">TLanguageParser</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

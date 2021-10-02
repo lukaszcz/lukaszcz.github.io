@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Profiles</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="SrcDoc documentation"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Dependencies"
+HREF="c31.html"><LINK
+REL="NEXT"
+TITLE="Command line options"
+HREF="c57.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>SrcDoc documentation</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c31.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c57.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="PROFS"
+></A
+>Chapter 5. Profiles</H1
+><P
+>&#13;Depending on the intended audience, you may choose to include only the
+interface parts of modules, or both the interface and implementation.&#13;</P
+><P
+>&#13;Profiles let you control which parts are written to output and which
+are ignored. There are two pre-defined profiles:
+<CODE
+CLASS="PARAMETER"
+>user</CODE
+> and <CODE
+CLASS="PARAMETER"
+>devel</CODE
+>. You may
+also specify your own profile, but you will have to use options line
+<CODE
+CLASS="OPTION"
+><A
+HREF="x90.html"
+>--protected</A
+></CODE
+> or
+<CODE
+CLASS="OPTION"
+><A
+HREF="x93.html"
+>--private</A
+></CODE
+>.&#13;</P
+><P
+>&#13;In the <CODE
+CLASS="PARAMETER"
+>user</CODE
+> profile only declarations present
+in the interface are included in the documentation, and only public
+and protected methods of classes. In the <CODE
+CLASS="PARAMETER"
+>devel</CODE
+>
+profile every declaration is included.  &#13;</P
+><P
+> 
+
+You may explicitly include or exclude a declaration by using the
+<B
+CLASS="COMMAND"
+><A
+HREF="x131.html#CMDPROFILE"
+>@profile</A
+></B
+> command
+in the comment associated with the declaration. This command may be
+followed by one profile name or a list of profile names in which the
+declaration should be included. If there is more than one profile
+name, then the list must be enclosed in parentheses and the left
+bracket must follow immediately after the command name with no
+intervening whitespace. If the <B
+CLASS="COMMAND"
+><A
+HREF="x131.html#CMDPROFILE"
+>@profile</A
+></B
+> command is not used
+then whether to include the declaration is determined based on the
+rules from the above paragraph.&#13;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c31.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c57.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Dependencies</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Command line options</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

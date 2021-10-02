@@ -1,0 +1,571 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Alphabetical list of commands</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="SrcDoc documentation"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Comment commands"
+HREF="c123.html"><LINK
+REL="PREVIOUS"
+TITLE="Comment commands"
+HREF="c123.html"><LINK
+REL="NEXT"
+TITLE="Comment-start Commands"
+HREF="x237.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>SrcDoc documentation</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c123.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 7. Comment commands</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x237.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AEN131"
+>7.2. Alphabetical list of commands</A
+></H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN133"
+>7.2.1. &lt;xxx&gt;</A
+></H2
+><P
+>&#13;     Indicates that xxx is a name of some local symbol (ex. a routine
+     parameter). xxx must be a single word and may contain no
+     whitespace.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN136"
+>7.2.2. _xxx_</A
+></H2
+><P
+>&#13;     Makes xxx emphasised. See @emphasis.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN139"
+>7.2.3. \<CODE
+CLASS="PARAMETER"
+>char</CODE
+></A
+></H2
+><P
+>&#13;     If <CODE
+CLASS="PARAMETER"
+>char</CODE
+> is one of '_', '&#60;', '&#62;', '@' or
+     '\' then escapes it, i.e. prevents it from being specially
+     interpreted by the comment parser. '@' may also be escaped by
+     another '@'.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN144"
+>7.2.4. @&lt;xxx&gt;</A
+></H2
+><P
+>&#13;     Creates a link to xxx. See @link.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN147"
+>7.2.5. @c, @code</A
+></H2
+><P
+>&#13;     Makes the subsequent text be interpreted as source code and
+     formatted accordingly. See @end-code.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN150"
+>7.2.6. @discard-subsequent-commands, @discard-commands</A
+></H2
+><P
+>&#13;     Discards all the commands after the current position. In other
+     words, interprets every subsequent @ character as a normal
+     character.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN153"
+>7.2.7. @discard-recent-comment, @discard-recent-comments, @discard-comment</A
+></H2
+><P
+>&#13;     Discards the part of the comment before the current position.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN156"
+>7.2.8. @e <CODE
+CLASS="PARAMETER"
+>word</CODE
+>, @emp <CODE
+CLASS="PARAMETER"
+>word</CODE
+>, @emphasis <CODE
+CLASS="PARAMETER"
+>word</CODE
+> @emphasis(<CODE
+CLASS="PARAMETER"
+>text</CODE
+>)</A
+></H2
+><P
+>&#13;     Makes <CODE
+CLASS="PARAMETER"
+>word</CODE
+> or <CODE
+CLASS="PARAMETER"
+>text</CODE
+>
+     emphasised. <CODE
+CLASS="PARAMETER"
+>word</CODE
+> may not contain
+     whitespace and must be composed of alpha-numeric characters
+     entirely. <CODE
+CLASS="PARAMETER"
+>text</CODE
+> may contain anything except
+     for ',' and ')'.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN167"
+>7.2.9. @ec, @end-code</A
+></H2
+><P
+>&#13;     If @code is active then deactivates it. Otherwise does nothing.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN170"
+>7.2.10. @fetch-related</A
+></H2
+><P
+>&#13;     Fetches a comment from a related method and prepends it to the
+     current comment. A related method is a method in an ancestor
+     class or an implemented interface or its ancestor with the same
+     name as the current method.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN173"
+>7.2.11. @heading one_word_heading size, @heading(heading, size), @heading(heading)</A
+></H2
+><P
+>&#13;     Makes <CODE
+CLASS="PARAMETER"
+>heading</CODE
+> appear as a heading of size
+     <CODE
+CLASS="PARAMETER"
+>size</CODE
+>. <CODE
+CLASS="PARAMETER"
+>size</CODE
+> may be a
+     number form 1 (the largest) to 6 (the smallest). If the size is
+     omitted then uses the size number 3.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN179"
+>7.2.12. @ignore-declarations n</A
+></H2
+><P
+>&#13;     Ignores n following declarations. Comments are read and processed
+     normally, and if one of the following comment includes an
+     @include-declarations command it overrides the effect of the
+     previous command.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN182"
+>7.2.13. @include-declarations n</A
+></H2
+><P
+>&#13;     Indicates that the current comment is a common comment for n
+     following declarations.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN185"
+>7.2.14. @id name, @identifier name</A
+></H2
+><P
+>     
+     Interprets <CODE
+CLASS="PARAMETER"
+>name</CODE
+> as a programming language
+     identifier and formats it accordingly.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN189"
+>7.2.15. @kw arg, @keyword arg</A
+></H2
+><P
+>&#13;     Indicates that the argument arg is a language keyword. It will be
+     formatted accordingly.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN192"
+>7.2.16. @link dest, @link(dest,label)</A
+></H2
+><P
+>&#13;     Creates a link to
+     <CODE
+CLASS="PARAMETER"
+>dest</CODE
+>. <CODE
+CLASS="PARAMETER"
+>dest</CODE
+> should
+     be the name of an identifier, either qualified or not. If
+     <CODE
+CLASS="PARAMETER"
+>dest</CODE
+> is not recognized as a valid symbol
+     then the link is written as a plain text. The text on the link is
+     <CODE
+CLASS="PARAMETER"
+>label</CODE
+> if the second argument is present.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN199"
+>7.2.17. @linkfile dest, @linkfile(dest,label), @lf dest, @lf(dest,label)</A
+></H2
+><P
+>&#13;     Creates a link to a file named
+     <CODE
+CLASS="PARAMETER"
+>dest</CODE
+>. Causes the documentation to be
+     generated for this file as well.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN203"
+>7.2.18. @nl, @newline</A
+></H2
+><P
+>&#13;     Insert a line break.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN206"
+>7.2.19. @no-description</A
+></H2
+><P
+>&#13;     Inhibits the automatic generation of the description paragraph
+     for the current comment.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN209"
+>7.2.20. @para, @para(heading)</A
+></H2
+><P
+>&#13;     Starts a new paragraph without a heading or with
+     <CODE
+CLASS="PARAMETER"
+>heading</CODE
+> as a heading. When starting a new
+     paragraph text formatting options are reset to their defaults.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN213"
+>7.2.21. @param param_name [-] param_description...</A
+></H2
+><P
+>&#13;     Declares a parameter to a routine. param_name is the name of the
+     parameter, followed by an optional dash (-), followed by the
+     description of the parameter, which is a text block of any length
+     continuing up to the next non-inline command or the end of the
+     comment.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN216"
+>7.2.22. @pre ... @endpre</A
+></H2
+><P
+>&#13;     Declares a pre-formatted text block. Anything between the @pre
+     and @endpre commands is written to the output file exactly as it
+     appears in the comment. No formatting, beautifying or even not
+     the interpretation of commands is performed. The only recognized
+     command after encountering @pre is @endpre.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="CMDPROFILE"
+>7.2.23. @profile <CODE
+CLASS="PARAMETER"
+>profile_name</CODE
+>, @profile(<CODE
+CLASS="PARAMETER"
+>profile_names</CODE
+>), @profiles(<CODE
+CLASS="PARAMETER"
+>profile_names</CODE
+>)</A
+></H2
+><P
+>&#13;     Indicates that _all_ of the declarations that will be associated
+     with the comment should be written out only in the listed
+     profiles. If this appears in the unit comment then the
+     documentation for the whole unit is created only in the listed
+     profiles. There are two predefined profile names: 'user' and
+     'devel'. To exclude the declaration from all profiles use
+     '@profile none'. Profile names are not case-sensitive.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN225"
+>7.2.24. @see [block]</A
+></H2
+><P
+>&#13;     Begins a new paragraph with the heading 'See' and creates a link
+     to each word in [block]. Discards any non-alphanumerical
+     characters in [block].&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="CMDSYNOPSIS"
+>7.2.25. @synopsis [block]</A
+></H2
+><P
+>&#13;     Declares the synopsis for the current comment to be [block]. If
+     there is no @synopsis command in the whole comment and the
+     --synopsis command line option is on (the default), then the
+     first sentence of the comment is assumed to be the synopsis,
+     provided that it is not too long.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN231"
+>7.2.26. @title(title)</A
+></H2
+><P
+>&#13;     Sets the title for the comment. If this appears in a file whose
+     only content is a comment then this sets the name by which the
+     file is referred to in the auto-generated contents. Otherwise, it
+     might or might not have any effect depending on the output format
+     and the size of the declaration/section associated with the
+     comment.&#13;</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN234"
+>7.2.27. @until-next-comment</A
+></H2
+><P
+>&#13;     Indicates that the current comment is a common comment for all
+     following declarations until another comment is encountered.&#13;</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c123.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x237.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Comment commands</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c123.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Comment-start Commands</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

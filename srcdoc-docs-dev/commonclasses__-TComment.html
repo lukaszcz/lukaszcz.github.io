@@ -1,0 +1,689 @@
+<html>
+<head>
+<title>Reference for TComment</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h2>TComment</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TComment = </span><span class="program_code"><span class="keyword">class</span></span><span class="program_code">(TTextObject)</span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Immediate ancestor</h3>
+<a href="commonclasses__-TTextObject.html">TTextObject</a>
+<h3>Source</h3>
+commonclasses.pas on line 178
+</p><p>
+
+<h3>Description</h3>
+ Represents a whole parsed, formatted comment.
+<h3>Members</h3>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#Create">Create</a>
+</p>
+</td>
+<td width="15%">
+<p>
+constructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ The argument is owned by the object and destroyed together with it.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="15%">
+<p>
+destructor
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#CopySelf">CopySelf</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#WriteOut">WriteOut</a>
+</p>
+</td>
+<td width="15%">
+<p>
+procedure
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#Synopsis">Synopsis</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns the paragraph constituting the synopsis of the comment or nil if the comment does not have a synopsis.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#Title">Title</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#Profiles">Profiles</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ If nil then all profiles are allowed.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#IncludeDeclarations">IncludeDeclarations</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ The maximum number of following declarations that should be associated with this comment, provided that no other comment is found before these declarations.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="commonclasses__-TComment.html#FetchRelated">FetchRelated</a>
+</p>
+</td>
+<td width="15%">
+<p>
+property
+</p>
+</td>
+<td width="15%">
+<p>
+public
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Indicates whether to prepend a comment of a related method to self.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="Create"><hr></a>
+
+<h2>TComment.Create</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">constructor</span></span><span class="program_code"> Create(aparas : </span><span class="program_code"><span class="global_symbol">TListAdt</span></span><span class="program_code">; asynopsis : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TParagraph.html">TParagraph</a></span></span><span class="program_code">; atitle : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">; aprofiles : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code">; inclDecl : </span><span class="program_code"><span class="global_symbol">Cardinal</span></span><span class="program_code">; afetchRelated : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">);</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 194
+</p><p>
+
+<h3>Description</h3>
+ The argument is owned by the object and destroyed together with it. Aparas is a list of TParagraph's, asynopsis is the sysopsis for the comment or nil if there's no synopsis.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#Create">Create</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Destroy"><hr></a>
+
+<h2>TComment.Destroy</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">destructor</span></span><span class="program_code"> Destroy; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 197
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#Destroy">Destroy</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="CopySelf"><hr></a>
+
+<h2>TComment.CopySelf</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> CopySelf : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TTextObject.html">TTextObject</a></span></span><span class="program_code">; </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TTextObject.html#CopySelf">TTextObject.CopySelf</a>
+<h3>Source</h3>
+commonclasses.pas on line 199
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#CopySelf">CopySelf</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="WriteOut"><hr></a>
+
+<h2>TComment.WriteOut</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">procedure</span></span><span class="program_code"> WriteOut(section : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TSection.html">TSection</a></span></span><span class="program_code">); </span><span class="program_code"><span class="keyword">override</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Related methods</h3>
+<a href="commonclasses__-TTextObject.html#WriteOut">TTextObject.WriteOut</a>
+<h3>Source</h3>
+commonclasses.pas on line 198
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#WriteOut">WriteOut</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Synopsis"><hr></a>
+
+<h2>TComment.Synopsis</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> Synopsis : </span><span class="program_code"><span class="global_symbol"><a href="commonclasses__-TParagraph.html">TParagraph</a></span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FSynopsis;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 204
+</p><p>
+
+<h3>Description</h3>
+ Returns the paragraph constituting the synopsis of the comment or nil if the comment does not have a synopsis. A synopsis is a short (at most one sentence) summary of the whole comment. Non-nil if the comment has a synopsis;.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#Synopsis">Synopsis</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Title"><hr></a>
+
+<h2>TComment.Title</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> Title : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FTitle;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 205
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#Title">Title</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="Profiles"><hr></a>
+
+<h2>TComment.Profiles</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> Profiles : </span><span class="program_code"><span class="global_symbol">TStrings</span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FProfiles;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 207
+</p><p>
+
+<h3>Description</h3>
+ If nil then all profiles are allowed.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#Profiles">Profiles</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="IncludeDeclarations"><hr></a>
+
+<h2>TComment.IncludeDeclarations</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> IncludeDeclarations : </span><span class="program_code"><span class="global_symbol">Cardinal</span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FInclDecl;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 211
+</p><p>
+
+<h3>Description</h3>
+ The maximum number of following declarations that should be associated with this comment, provided that no other comment is found before these declarations.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#IncludeDeclarations">IncludeDeclarations</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="FetchRelated"><hr></a>
+
+<h2>TComment.FetchRelated</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">property</span></span><span class="program_code"> FetchRelated : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code"> </span><span class="program_code"><span class="keyword">read</span></span><span class="program_code"> FFetchRelated;</span></nobr>
+
+<h3>Visibility</h3>
+public
+<h3>Source</h3>
+commonclasses.pas on line 214
+</p><p>
+
+<h3>Description</h3>
+ Indicates whether to prepend a comment of a related method to self.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html#FetchRelated">FetchRelated</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses__-TComment.html">TComment</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="commonclasses.html">commonclasses</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>

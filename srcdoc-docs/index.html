@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>SrcDoc documentation</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="NEXT"
+TITLE="What is SrcDoc?"
+HREF="c3.html"></HEAD
+><BODY
+CLASS="BOOK"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="BOOK"
+><A
+NAME="AEN1"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="TITLE"
+><A
+NAME="AEN1"
+>SrcDoc documentation</A
+></H1
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+>1. <A
+HREF="c3.html"
+>What is SrcDoc?</A
+></DT
+><DT
+>2. <A
+HREF="c8.html"
+>Basic comment formatting</A
+></DT
+><DT
+>3. <A
+HREF="c24.html"
+>Invoking SrcDoc</A
+></DT
+><DT
+>4. <A
+HREF="c31.html"
+>Dependencies</A
+></DT
+><DT
+>5. <A
+HREF="c39.html"
+>Profiles</A
+></DT
+><DT
+>6. <A
+HREF="c57.html"
+>Command line options</A
+></DT
+><DD
+><DL
+><DT
+>6.1. <A
+HREF="c57.html#AEN60"
+>-o, --output-directory=DIR</A
+></DT
+><DT
+>6.2. <A
+HREF="x63.html"
+>-s, --source-directory=DIR</A
+></DT
+><DT
+>6.3. <A
+HREF="x66.html"
+>-f, --format=FORMAT</A
+></DT
+><DT
+>6.4. <A
+HREF="x69.html"
+>-l, --language=LANG</A
+></DT
+><DT
+>6.5. <A
+HREF="x72.html"
+>-p, --profile=PROF</A
+></DT
+><DT
+>6.6. <A
+HREF="x75.html"
+>-c, --comment-parser=PARSER</A
+></DT
+><DT
+>6.7. <A
+HREF="x78.html"
+>-d, --dependencies</A
+></DT
+><DT
+>6.8. <A
+HREF="x81.html"
+>-b, --beautify-comments</A
+></DT
+><DT
+>6.9. <A
+HREF="x84.html"
+>-t, --title=TITLE</A
+></DT
+><DT
+>6.10. <A
+HREF="x87.html"
+>-i, --implementation-info=on/off</A
+></DT
+><DT
+>6.11. <A
+HREF="x90.html"
+>--protected=on/off</A
+></DT
+><DT
+>6.12. <A
+HREF="x93.html"
+>--private=on/off</A
+></DT
+><DT
+>6.13. <A
+HREF="x96.html"
+>--table-border=on/off</A
+></DT
+><DT
+>6.14. <A
+HREF="x99.html"
+>--skip-separators=on/off</A
+></DT
+><DT
+>6.15. <A
+HREF="x102.html"
+>-j, --join-comments=on/off</A
+></DT
+><DT
+>6.16. <A
+HREF="x105.html"
+>--fetch-comments=on/off</A
+></DT
+><DT
+>6.17. <A
+HREF="x108.html"
+>--synopsis=on/off</A
+></DT
+><DT
+>6.18. <A
+HREF="x111.html"
+>-v, --verbose</A
+></DT
+><DT
+>6.19. <A
+HREF="x114.html"
+>-q, --quiet, --silent</A
+></DT
+><DT
+>6.20. <A
+HREF="x117.html"
+>-h, --help</A
+></DT
+><DT
+>6.21. <A
+HREF="x120.html"
+>--version</A
+></DT
+></DL
+></DD
+><DT
+>7. <A
+HREF="c123.html"
+>Comment commands</A
+></DT
+><DD
+><DL
+><DT
+>7.1. <A
+HREF="c123.html#AEN126"
+>Note</A
+></DT
+><DT
+>7.2. <A
+HREF="x131.html"
+>Alphabetical list of commands</A
+></DT
+><DD
+><DL
+><DT
+>7.2.1. <A
+HREF="x131.html#AEN133"
+>&lt;xxx&gt;</A
+></DT
+><DT
+>7.2.2. <A
+HREF="x131.html#AEN136"
+>_xxx_</A
+></DT
+><DT
+>7.2.3. <A
+HREF="x131.html#AEN139"
+>\<CODE
+CLASS="PARAMETER"
+>char</CODE
+></A
+></DT
+><DT
+>7.2.4. <A
+HREF="x131.html#AEN144"
+>@&lt;xxx&gt;</A
+></DT
+><DT
+>7.2.5. <A
+HREF="x131.html#AEN147"
+>@c, @code</A
+></DT
+><DT
+>7.2.6. <A
+HREF="x131.html#AEN150"
+>@discard-subsequent-commands, @discard-commands</A
+></DT
+><DT
+>7.2.7. <A
+HREF="x131.html#AEN153"
+>@discard-recent-comment, @discard-recent-comments, @discard-comment</A
+></DT
+><DT
+>7.2.8. <A
+HREF="x131.html#AEN156"
+>@e <CODE
+CLASS="PARAMETER"
+>word</CODE
+>, @emp <CODE
+CLASS="PARAMETER"
+>word</CODE
+>, @emphasis <CODE
+CLASS="PARAMETER"
+>word</CODE
+> @emphasis(<CODE
+CLASS="PARAMETER"
+>text</CODE
+>)</A
+></DT
+><DT
+>7.2.9. <A
+HREF="x131.html#AEN167"
+>@ec, @end-code</A
+></DT
+><DT
+>7.2.10. <A
+HREF="x131.html#AEN170"
+>@fetch-related</A
+></DT
+><DT
+>7.2.11. <A
+HREF="x131.html#AEN173"
+>@heading one_word_heading size, @heading(heading, size), @heading(heading)</A
+></DT
+><DT
+>7.2.12. <A
+HREF="x131.html#AEN179"
+>@ignore-declarations n</A
+></DT
+><DT
+>7.2.13. <A
+HREF="x131.html#AEN182"
+>@include-declarations n</A
+></DT
+><DT
+>7.2.14. <A
+HREF="x131.html#AEN185"
+>@id name, @identifier name</A
+></DT
+><DT
+>7.2.15. <A
+HREF="x131.html#AEN189"
+>@kw arg, @keyword arg</A
+></DT
+><DT
+>7.2.16. <A
+HREF="x131.html#AEN192"
+>@link dest, @link(dest,label)</A
+></DT
+><DT
+>7.2.17. <A
+HREF="x131.html#AEN199"
+>@linkfile dest, @linkfile(dest,label), @lf dest, @lf(dest,label)</A
+></DT
+><DT
+>7.2.18. <A
+HREF="x131.html#AEN203"
+>@nl, @newline</A
+></DT
+><DT
+>7.2.19. <A
+HREF="x131.html#AEN206"
+>@no-description</A
+></DT
+><DT
+>7.2.20. <A
+HREF="x131.html#AEN209"
+>@para, @para(heading)</A
+></DT
+><DT
+>7.2.21. <A
+HREF="x131.html#AEN213"
+>@param param_name [-] param_description...</A
+></DT
+><DT
+>7.2.22. <A
+HREF="x131.html#AEN216"
+>@pre ... @endpre</A
+></DT
+><DT
+>7.2.23. <A
+HREF="x131.html#CMDPROFILE"
+>@profile <CODE
+CLASS="PARAMETER"
+>profile_name</CODE
+>, @profile(<CODE
+CLASS="PARAMETER"
+>profile_names</CODE
+>), @profiles(<CODE
+CLASS="PARAMETER"
+>profile_names</CODE
+>)</A
+></DT
+><DT
+>7.2.24. <A
+HREF="x131.html#AEN225"
+>@see [block]</A
+></DT
+><DT
+>7.2.25. <A
+HREF="x131.html#CMDSYNOPSIS"
+>@synopsis [block]</A
+></DT
+><DT
+>7.2.26. <A
+HREF="x131.html#AEN231"
+>@title(title)</A
+></DT
+><DT
+>7.2.27. <A
+HREF="x131.html#AEN234"
+>@until-next-comment</A
+></DT
+></DL
+></DD
+><DT
+>7.3. <A
+HREF="x237.html"
+>Comment-start Commands</A
+></DT
+><DD
+><DL
+><DT
+>7.3.1. <A
+HREF="x237.html#AEN240"
+>{@discard ... }</A
+></DT
+><DT
+>7.3.2. <A
+HREF="x237.html#AEN244"
+>{@decl <CODE
+CLASS="PARAMETER"
+>declaration</CODE
+> }</A
+></DT
+></DL
+></DD
+></DL
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c3.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>What is SrcDoc?</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

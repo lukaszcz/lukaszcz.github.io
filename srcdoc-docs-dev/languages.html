@@ -1,0 +1,331 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SrcDoc 0.1">
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<p>
+
+<h1>languages</h1>
+
+</p><p>
+
+<h3>Description</h3>
+ This unit provides support for various (human) languages.
+<h2>Declarations</h2>
+
+</p>
+<table cols="4" border="1" width="100%">
+<tr>
+<td width="30%">
+<p>
+
+<h4>Name</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Type</h4>
+
+</p>
+</td>
+<td width="15%">
+<p>
+
+<h4>Visibility</h4>
+
+</p>
+</td>
+<td width="40%">
+<p>
+
+<h4>Synopsis</h4>
+
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="languages.html#SetLanguage">SetLanguage</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+global
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ If <span class="local_symbol">lang</span> is a valid language identifier then sets the output (human) language to that language and returns true.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="languages.html#GetLangString">GetLangString</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+global
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns a string in a (human) language corresponding to the specified index.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="languages.html#LangCharsetName">LangCharsetName</a>
+</p>
+</td>
+<td width="15%">
+<p>
+function
+</p>
+</td>
+<td width="15%">
+<p>
+global
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ Returns the name of character set to be used for the current language.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+<a href="languages.html#TLangString">TLangString</a>
+</p>
+</td>
+<td width="15%">
+<p>
+type
+</p>
+</td>
+<td width="15%">
+<p>
+global
+</p>
+</td>
+<td width="40%">
+<p>
+
+</p><p>
+ A string in a (human) language.
+</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>
+
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="languages.html">languages</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+<br>
+
+</p><p>
+<a name="SetLanguage"><hr></a>
+
+<h2>SetLanguage</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> SetLanguage(lang : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">Boolean</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Source</h3>
+languages.pas on line 34
+</p><p>
+
+<h3>Description</h3>
+ If <span class="local_symbol">lang</span> is a valid language identifier then sets the output (human) language to that language and returns true. Otherwise returns false.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="languages.html#SetLanguage">SetLanguage</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="languages.html">languages</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="GetLangString"><hr></a>
+
+<h2>GetLangString</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> GetLangString(s : </span><span class="program_code"><span class="global_symbol"><a href="languages.html#TLangString">TLangString</a></span></span><span class="program_code">) : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Source</h3>
+languages.pas on line 37
+</p><p>
+
+<h3>Description</h3>
+ Returns a string in a (human) language corresponding to the specified index.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="languages.html#GetLangString">GetLangString</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="languages.html">languages</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="LangCharsetName"><hr></a>
+
+<h2>LangCharsetName</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code"><span class="keyword">function</span></span><span class="program_code"> LangCharsetName : </span><span class="program_code"><span class="global_symbol">String</span></span><span class="program_code">;</span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Source</h3>
+languages.pas on line 40
+</p><p>
+
+<h3>Description</h3>
+ Returns the name of character set to be used for the current language.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="languages.html#LangCharsetName">LangCharsetName</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="languages.html">languages</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p><p>
+<a name="TLangString"><hr></a>
+
+<h2>TLangString</h2>
+
+<h3>Declaration</h3>
+
+<nobr>
+
+</p><p>
+<span class="program_code">TLangString =(AAA_str, Access_str, constant_str, Contents_str, Class_tree_str, Declaration_str, Declarations_str, Description_str, field_str, file_str, global_str, ID_str, Immediate_ancestor_str, Immediate_ancestors_str, Immediate_descendants_str, Implemented_by_str, Implemented_interface_str, Implemented_interfaces_str, Interface_tree_str, interface_str, local_str, Members_str, Modules_str, Name_str, Notes_on_the_implementation_str, on_line_str, Parameters_str, private_str, protected_str, public_str, property_str, record_str, Reference_for_str, Related_methods_str, See_also_str, Source_str, Symbol_index_str, Synopsis_str, Table_of_contents_str, thread_local_str, ttype_str, Type_str, Uses_in_implementation_str, Uses_in_interface_str, variable_str, Visibility_str, ZZZ_str);</span></nobr>
+
+<h3>Visibility</h3>
+global
+<h3>Source</h3>
+languages.pas on line 12
+</p><p>
+
+<h3>Description</h3>
+ A string in a (human) language. The case of the identifiers is significant. The strings should have the same case as the identifiers here.
+</p><p>
+
+</p>
+<table cols="3" border="1" width="100%">
+<tr>
+<td width="33%">
+<p>
+<a href="languages.html#TLangString">TLangString</a>
+</p>
+</td>
+<td width="33%">
+<p>
+<a href="languages.html">languages</a>
+</p>
+</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+</html>
