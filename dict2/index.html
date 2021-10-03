@@ -1,0 +1,121 @@
+<html>
+<head>
+  <title>Homepage of Łukasz Czajka</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <meta name="author" content="Łukasz Czajka">
+</head>
+<body>
+<table border="0" width="100%" height="100%">
+<tr height="95%">
+<td valign="top">
+<h2>Dict2</h2>
+<p>
+  Dict2 is a dictionary viewing application for GNU/Linux (GTK+). It
+  was written with the intention to be used with the German-English
+  dictionary files from <a href="http://www.dict.cc">www.dict.cc</a>.
+</p>
+<p>
+<h4>Features</h4>
+<ul>
+<li>easy-to-use graphical interface</li>
+<li>regular expression (regex) search</li>
+<li>searching words with a common stem</li>
+<li>searching inflections of a word</li>
+<li>searching alternate forms of a word</li>
+<li>tabbed browsing</li>
+<li>caching to improve performance</li>
+</ul>
+</p>
+<h4>Download</h4>
+<p>
+  The latest version is 2.0.1.
+</p>
+<p>
+  <a
+  href="https://github.com/lukaszcz/dict2/v2.0.1.tar.gz">dict2-2.0.1.tar.gz</a>
+</p>
+<p>
+  <b>Note</b>: You must download the dictionary files directly
+  from <a href="http://www.dict.cc/?s=about%3Awordlist">here</a>. They
+  are not included in the distribution.
+</p>
+<p>
+  <b>Important</b>: You should choose the old format when downloading
+  (Elcombri / old format, cp1252). Other formats are not supported.
+</p>
+<hr>
+<h3>Short manual</h3>
+
+<p></p>
+<h4>Loading the files</h4>
+<p>
+  After downloading and unzipping the file just load the textual file
+  with the 'Load' button.
+</p>
+<img src="dict2_01_large.png" alt="Loading files" />
+
+<p></p>
+<h4>Search types</h4>
+<p>
+  There are three search types.
+  <ul>
+    <li><b>Find</b> This is a keyword search. Any definitions
+    containig the word searched as a single word will be
+    displayed. Inflections and words with a common stem may be listed
+    as well by using the 'stem', 'inflect' and 'forms' options. This
+    search type is the default - it is invoked when you press
+    ENTER.</li>
+    <li><b>Find (regex)</b> This is a regular expression search. All
+    definitions matching a given POSIX extended regular expression
+    will be displayed. For more information on regular expression see
+    e.g. man grep.</li>
+    <li><b>Find (exact)</b> This is an exact match search. The 'stem',
+    'inflect' and 'forms' options are not taken into account, and only
+    definitions matching exactly the phrase typed are displayed.</li>
+  </ul>
+</p>
+<img src="dict2_02_large.png" alt="Search types" />
+
+<p></p>
+<h4>The stem, inflect and forms options</h4>
+<p>
+  You may search words with a stem common with the word typed by
+  checking the 'stem' checkbutton. For instance, searching 'ausmachen'
+  gives 'machen' as one of the translations. This option may be
+  combined with the inflection search - searching inflections of a
+  word. If these two buttons are checked then looking for e.g.
+  'gemacht' gives 'machen' and 'ausmachen' among other results. If
+  only the 'inflect' option is chosen, 'ausmachen' is not displayed.
+</p>
+<p>
+  Another option similar to the two described is the 'forms' option -
+  checking it enables searching words which are derived from the word
+  typed, but have a different grammatical form (e.g. you type a verb
+  and get a noun). For instance, if you search 'Ruhe' with this option
+  enabled, you get 'ruhig' among other results.
+</p>
+<p>
+  The more of these three options you use, the slower your searches
+  become. If you have a slow computer you might consider unchecking
+  all of them. On modern machines, however, the difference in speed is
+  usually imperceptible.
+</p>
+<img src="dict2_03_large.png" alt="Stem, inflect and forms
+options" />
+
+<p></p>
+<h4>Viewing a definition</h4>
+<p>
+  If you want to copy text from one of the results, just select the
+  desired line in the results view and click the 'View definition'
+  button or double-click the line. This shows the definition is a
+  separate window. This feature is also useful if the text is too long
+  and you can't see the whole of it.
+</p>
+<img src="dict2_04.png" alt="View definition" />
+</td>
+</tr>
+</table>
+</body>
+</html>
