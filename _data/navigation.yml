@@ -1,9 +1,13 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Theses"
+    url: /theses/
+  - title: "Papers"
+    url: /papers/
+  - title: "Software"
+    url: /software/
+  - title: "Formalizations"
+    url: /formalizations/
