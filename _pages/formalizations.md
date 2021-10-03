@@ -20,8 +20,6 @@ papers.
   operational semantics and compilation correctness for a simple
   imperative language. In cooperation with Burak Ekici and Cezary
   Kaliszyk.
-* [Sorting algorithms](https://github.com/lukaszcz/sortalgs):
-  Formalisation of several sorting algorithms: quick sort, merge sort,
-  insertion sort, selection sort.
-* [Binary search trees](https://github.com/lukaszcz/bst):
-  Formalisation of binary search trees in Coq.
+* [Sorting algorithms](https://github.com/lukaszcz/sortalgs): quick
+  sort, merge sort, insertion sort, selection sort.
+* [Binary search trees](https://github.com/lukaszcz/bst).
