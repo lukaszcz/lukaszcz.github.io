@@ -1,6 +1,4 @@
 main:
-  - title: "About"
-    url: /about/
   - title: "Teaching"
     url: /teaching/
   - title: "Theses"
