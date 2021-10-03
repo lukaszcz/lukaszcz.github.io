@@ -73,14 +73,11 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lukaszcz"
+      
+atom_feed:
+  hide: true
 
 defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
   # _pages
   - scope:
       path: "_pages"
