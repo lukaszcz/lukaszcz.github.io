@@ -7,7 +7,7 @@ Below is an incomplete list of open source software I've written over
 the years. The projects range from small programs with several hundred
 lines to medium-sized projects of 10k-30k lines. Some are in a
 prototype stage, but all have been tested, debugged and completed
-enough for basic usability.
+enough for at least basic usability.
 
 * [CoqHammer](https://coqhammer.github.io): An automated reasoning
   system for Coq.
