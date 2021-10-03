@@ -48,7 +48,7 @@ Unpublished notes
 2. Łukasz Czajka: [Needed rewriting](/papers/needed.pdf)
 3. Łukasz Czajka: [On the equivalence of different presentations of Turner's bracket abstraction algorithm](http://arxiv.org/abs/1510.03794)
 
---
+---
 
 Links to [arxiv](http://arxiv.org) point to short notes, preprints or
 extended versions.

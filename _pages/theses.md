@@ -27,26 +27,28 @@ verification.
 Some paper links below require a subscription and are therefore
 accessible only through the university network.
 
-## Formalization (or implementation) of functional data structures
+Formalization of functional data structures
+-------------------------------------------
 
 Choose some of your favourite functional data structures (e.g. from
 [1]) and formalize them in Coq [2] or Isabelle/HOL. For a bachelor
 thesis, only a good implementation of a nontrivial functional data
 structure in Haskell or OCaml may be sufficient.
 
-#### References
+### References
 1. C. Okasaki: [Purely functional data structures](https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf)
 2. Y. Bertot: [Coq in a hurry](https://cel.archives-ouvertes.fr/file/index/docid/459139/filename/coq-hurry.pdf)
 
-#### Prerequisites
+### Prerequisites
 * Functional programming
 * Coq or Isabelle/HOL (unless only implementation is done)
 
-#### Suggested courses
+### Suggested courses
 * [ATLSE](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html)
 
 
-## Machine-learning premise selection for dependent type theory
+Machine-learning premise selection
+----------------------------------
 
 Hammers [3] are automated reasoning tools for proof assistants [1],
 which combine machine-learning with automated theorem proving. A
@@ -70,7 +72,7 @@ a proof assistant based on dependent type theory. The goal of a thesis
 would be to improve premise selection in CoqHammer by adapting the
 work done for other proof assistants.
 
-#### Goals
+### Goals
 * Design a better set of features, basing on [6].
 * Implement more machine-learning methods and compare them [3, Section 2].
 * Investigate adapting a deep learning approach [7].
@@ -78,7 +80,7 @@ work done for other proof assistants.
 A Bachelor thesis for this topic could concentrate only on the first
 goal: better feature design.
 
-#### References
+### References
 1. H. Geuvers: [Proof Assistants: History, Ideas and Future](https://www.ias.ac.in/article/fulltext/sadh/034/01/0003-0025)
 2. Y. Bertot: [Coq in a hurry](https://cel.archives-ouvertes.fr/file/index/docid/459139/filename/coq-hurry.pdf)
 3. J. Blanchette, C. Kaliszyk, L. Paulson, J. Urban: [Hammering
@@ -90,19 +92,20 @@ towards QED](https://people.mpi-inf.mpg.de/~jblanche/h4qed.pdf)
 7. A. Alemi, F. Chollet, N. Elen, G. Irving, C. Szegedy, J. Urban:
    [DeepMath - Deep Sequence Models for Premise Selection](https://arxiv.org/abs/1606.04442)
 
-#### Prerequisites
+### Prerequisites
 * Machine learning
 * Functional programming
 * Coq and type theory (only superficial knowledge of Coq and type
   theory is necessary as a prerequisite, but deeper knowledge will
   help)
 
-#### Suggested courses
+### Suggested courses
 * [Maschinelles Lernen](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Intelligente_Systeme/INF-MSc-506.pdf)
 * [ATLSE](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html)
 
 
-## Improvements of CoqHammer
+Improvements of CoqHammer
+-------------------------
 
 CoqHammer [1,2] (see also the previous topic) is an automated
 reasoning tool for Coq - currently the most recognisable and popular
@@ -116,20 +119,21 @@ problems. If you're interested in contributing to a cutting-edge
 research software project used by many people, ask me about the
 details.
 
-#### References
+### References
 1. [CoqHammer](https://coqhammer.github.io)
 2. Ł. Czajka, C. Kaliszyk: [Hammer for Coq: Automation for Dependent Type Theory](https://link.springer.com/article/10.1007/s10817-018-9458-4)
 
-#### Prerequisites
+### Prerequisites
 * Coq and LTac
 * Functional programming
 
-#### Suggested courses
+### Suggested courses
 * [ATLSE](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html)
 * [LMSE1](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf) and [LMSE2](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf)
 
 
-## Proof search in intuitionistic first-order logic
+Proof search in intuitionistic first-order logic
+------------------------------------------------
 
 The goal of a thesis would be to generalise slightly some results from
 the literature [1,2,3] on the decidability of certain fragments of
@@ -139,7 +143,7 @@ these fragments. Also implement an extension of the Intuition prover
 universal-implicational fragment of intuitionistic logic), to handle
 all connectives.
 
-#### Goals
+### Goals
 * Extend the result from [1] on EXPSPACE-completeness of the negative
   fragment of minimal first-order logic without function symbols to
   handle all connectives and function symbols with the restriction
@@ -162,7 +166,7 @@ A Bachelor thesis for this topic could concentrate only on the
 implementation, possibly only for the universal-implicational
 variants of the fragments without function symbols.
 
-#### References
+### References
 1. A. Schubert, P. Urzyczyn,
     K. Zdanowski: [On the
     Mints Hierarchy in First-Order Intuitionistic Logic](https://lmcs.episciences.org/2623)
@@ -181,26 +185,27 @@ variants of the fragments without function symbols.
 7. B. Düdder, M. Moritz, J. Rehof, P. Urzyczyn:
     [Bounded Combinatory Logic](http://drops.dagstuhl.de/opus/volltexte/2012/3676/)
 
-#### Prerequisites
+### Prerequisites
 * Logic and type theory
 
-#### Suggested courses
+### Suggested courses
 * [LMSE1](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf) and [LMSE2](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf)
 * [Komplexitätstheorie](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Basismodule/Forschungsbereich_Algorithmen_und_Komplexitaet/INF-MSc-242.pdf)
 
 
-## Proof search in Pure Type Systems
+Proof search in Pure Type Systems
+---------------------------------
 
 The goal of a thesis would be to compare and/or implement the proof
 search procedures for Pure Type Systems (or the Lambda-Cube) from the
 papers [1,2].
 
-#### References
+### References
 1. G. Dowek: [A Complete Proof Synthesis Method for the Cube of Type Systems](https://academic.oup.com/logcom/article/3/3/287/980271)
 2. S. Lengrand, R. Dyckhoff, J. McKinna: [A Focused Sequent Calculus Framework for Proof Search in Pure Type Systems](https://arxiv.org/abs/1012.3372)
 
-#### Prerequisites
+### Prerequisites
 * Logic and type theory
 
-#### Suggested courses
+### Suggested courses
 * [LMSE1](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf) and [LMSE2](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf)
