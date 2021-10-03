@@ -1,6 +1,6 @@
 ---
-permalink: /software/
-title: "Software"
+permalink: /formalizations/
+title: "Formalizations"
 ---
 
 Below is an incomplete list of Coq formalisations I've written over

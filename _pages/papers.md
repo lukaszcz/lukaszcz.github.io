@@ -4,7 +4,9 @@ title: "Papers"
 toc: true
 ---
 
-### Refereed publications (journals and refereed conference proceedings)
+Refereed publications
+---------------------
+
 1. Łukasz Czajka: [Practical proof search for Coq by type inhabitation](/papers/sauto.pdf),
 [IJCAR 2020](https://ijcar2020.org), ([evaluations](https://www.mimuw.edu.pl/~lukaszcz/sauto/index.html)) ([slides](sauto-pres.pdf))
 2. Łukasz Czajka: [A new coinductive confluence proof for infinitary lambda-calculus](https://lmcs.episciences.org/6194), [Logical Methods in Computer Science](https://lmcs.episciences.org/),
@@ -24,22 +26,29 @@ Volume 16, Issue 1 (2020), ([Coq formalisation](https://github.com/lukaszcz/infi
 15. Łukasz Czajka: [Higher-order illative combinatory logic](http://arxiv.org/abs/1202.3672), [Journal of Symbolic Logic](http://www.aslonline.org/journals-journal.html), Volume 78, Issue 3 (2013)
 16. Łukasz Czajka: [A semantic approach to illative combinatory logic](http://drops.dagstuhl.de/opus/volltexte/2011/3230/pdf/17.pdf), [CSL 2011](http://www.eacsl.org/csl11/)
 
-### Workshops (selected)
+Workshops (selected)
+--------------------
+
 1. Łukasz Czajka, Cezary Kaliszyk: [CoqHammer: A General-Purpose Automated Reasoning Tool for Coq](https://eutypes.cs.ru.nl/eutypes_pmwiki/uploads/Meetings/Czajlka.pdf), [EUTYPES 2018](https://eutypes.cs.ru.nl/Meetings/EUTYPES2018), invited talk
 2. Łukasz Czajka, Cezary Kaliszyk: [CoqHammer: Strong Automation for Program Verification](https://popl18.sigplan.org/event/coqpl-2018-coqhammer-strong-automation-for-program-verification), [CoqPL 2018](https://popl18.sigplan.org/track/CoqPL-2018), keynote
 ([slides](/papers/coqpl-pres.pdf))
 3. Łukasz Czajka, Cezary Kaliszyk: [Goal Translation for a Hammer for Coq (Extended Abstract)](http://dx.doi.org/10.4204/EPTCS.210.4), [HaTT 2016](https://hatt2016.inria.fr/)
 4. Łukasz Czajka, Cezary Kaliszyk: [Components of a Hammer for Type Theory: Coq Goal Translation and Reconstruction](http://www.types2016.uns.ac.rs/images/abstracts/czajka.pdf), [TYPES 2016](http://www.types2016.uns.ac.rs) ([slides](/papers/types2016.pdf))
 
-### PhD thesis
+PhD thesis
+----------
+
 Łukasz Czajka: [Semantic consistency proofs for systems of Illative Combinatory Logic](phd.pdf),
 PhD thesis, 2015, [slides](pres-phd.pdf), extended abstract: [en](aut-en.pdf), [pl](aut-pl.pdf)
 
-### Short notes, submitted and unpublished work
+Unpublished notes
+-----------------
+
 1. Łukasz Czajka: [Coinduction: an elementary approach](https://arxiv.org/abs/1501.04354)
 2. Łukasz Czajka: [Needed rewriting](/papers/needed.pdf)
 3. Łukasz Czajka: [On the equivalence of different presentations of Turner's bracket abstraction algorithm](http://arxiv.org/abs/1510.03794)
 
+--
 
 Links to [arxiv](http://arxiv.org) point to short notes, preprints or
 extended versions.

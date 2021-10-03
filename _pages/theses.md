@@ -1,5 +1,5 @@
 ---
-permalink: /software/
+permalink: /theses/
 title: "Thesis topic proposals (Abschlussarbeitenthemenvorschläge)"
 toc: true
 ---
@@ -27,7 +27,7 @@ verification.
 Some paper links below require a subscription and are therefore
 accessible only through the university network.
 
-### Formalization (or implementation) of functional data structures
+## Formalization (or implementation) of functional data structures
 
 Choose some of your favourite functional data structures (e.g. from
 [1]) and formalize them in Coq [2] or Isabelle/HOL. For a bachelor
@@ -45,7 +45,8 @@ structure in Haskell or OCaml may be sufficient.
 #### Suggested courses
 * [ATLSE](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html)
 
-### Machine-learning premise selection for dependent type theory
+
+## Machine-learning premise selection for dependent type theory
 
 Hammers [3] are automated reasoning tools for proof assistants [1],
 which combine machine-learning with automated theorem proving. A
@@ -100,7 +101,8 @@ towards QED](https://people.mpi-inf.mpg.de/~jblanche/h4qed.pdf)
 * [Maschinelles Lernen](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Intelligente_Systeme/INF-MSc-506.pdf)
 * [ATLSE](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html)
 
-### Improvements of CoqHammer
+
+## Improvements of CoqHammer
 
 CoqHammer [1,2] (see also the previous topic) is an automated
 reasoning tool for Coq - currently the most recognisable and popular
@@ -126,7 +128,8 @@ details.
 * [ATLSE](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html)
 * [LMSE1](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf) and [LMSE2](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf)
 
-### Proof search in intuitionistic first-order logic
+
+## Proof search in intuitionistic first-order logic
 
 The goal of a thesis would be to generalise slightly some results from
 the literature [1,2,3] on the decidability of certain fragments of
@@ -185,7 +188,8 @@ variants of the fragments without function symbols.
 * [LMSE1](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf) and [LMSE2](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf)
 * [Komplexitätstheorie](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Basismodule/Forschungsbereich_Algorithmen_und_Komplexitaet/INF-MSc-242.pdf)
 
-### Proof search in Pure Type Systems
+
+## Proof search in Pure Type Systems
 
 The goal of a thesis would be to compare and/or implement the proof
 search procedures for Pure Type Systems (or the Lambda-Cube) from the
