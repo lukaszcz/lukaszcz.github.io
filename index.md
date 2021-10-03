@@ -39,9 +39,9 @@ related to
 [these](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2019WS/POPL/index.html)
 [topics](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html).
 
-In the past, during my student years and earlier, aside of my ongoing
-interest in logic and theoretical computer science, I engaged in
-[compiler construction](https://github.com/lukaszcz/javalette#readme),
+In the past, during my student years and earlier, in addition to my
+ongoing interest in logic and theoretical computer science, I also engaged
+in [compiler construction](https://github.com/lukaszcz/javalette#readme),
 design and implementation of
 [programming](https://github.com/lukaszcz/hcpl#readme)
 [languages](https://github.com/lukaszcz/mcp#readme), low-level
