@@ -2,7 +2,8 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: single
+toc: true
 author_profile: true
 ---
 
@@ -64,5 +65,5 @@ Dortmund](https://ls14-www.cs.tu-dortmund.de).
 
 ### Contact
 
-Email (still valid, even though I'm not at [MIMUW](http://www.mimuw.edu.pl)
+Email (still valid, but I'm not at [MIMUW](http://www.mimuw.edu.pl)
 anymore): lukaszcz at mimuw edu pl
