@@ -43,8 +43,8 @@ In the past, during my student years and earlier, aside of my ongoing
 interest in logic and theoretical computer science, I engaged in
 [compiler construction](https://github.com/lukaszcz/javalette#readme),
 design and implementation of
-[programming](https://github.com/lukaszcz/mcp#readme)
-[languages](https://github.com/lukaszcz/hcpl#readme), low-level
+[programming](https://github.com/lukaszcz/hcpl#readme)
+[languages](https://github.com/lukaszcz/mcp#readme), low-level
 [programming](https://github.com/lukaszcz/asm32#readme), and
 implementation of efficient
 [algorithms and data structures](https://pascaladt.github.io). I still
@@ -56,7 +56,7 @@ remember much from that. See also my
 I received my Ph.D. from the [University of Warsaw](http://www.mimuw.edu.pl) under
 supervision of [Paweł Urzyczyn](http://www.mimuw.edu.pl/~urzy/). Then I was a postdoc in [Innsbruck](http://cl-informatik.uibk.ac.at/) where I
 developed [CoqHammer](https://coqhammer.github.io) with
-[Cezary Kaliszuk](http://cl-informatik.uibk.ac.at/cek/).
+[Cezary Kaliszyk](http://cl-informatik.uibk.ac.at/cek/).
 After that I received a [Marie Curie Individual Fellowship](https://ec.europa.eu/research/mariecurieactions/actions/postdoctoral-fellowships) to move to
 [Copenhagen](https://di.ku.dk/) and work on an [infinitary rewriting
 interpretation of coinductive types](https://lmcs.episciences.org/6097). Now
