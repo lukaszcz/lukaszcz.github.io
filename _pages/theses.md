@@ -132,8 +132,8 @@ details.
 * [LMSE1](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-325.pdf) and [LMSE2](http://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Master_Inf/Vertiefungsmodule/Forschungsbereich_Software_Sicherheit_und_Verifikation/INF-MSc-326.pdf)
 
 
-Proof search in intuitionistic first-order logic
-------------------------------------------------
+Proof search in intuitionistic logic
+------------------------------------
 
 The goal of a thesis would be to generalise slightly some results from
 the literature [1,2,3] on the decidability of certain fragments of
