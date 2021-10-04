@@ -1,6 +1,6 @@
 ---
 permalink: /theses/
-title: "Thesis topic proposals (Abschlussarbeitenthemenvorschläge)"
+title: "Thesis topic proposals"
 toc: true
 ---
 
