@@ -10,7 +10,7 @@ prototype stage, but all have been tested, debugged and completed
 enough for at least basic usability.
 
 * [CoqHammer](https://coqhammer.github.io): An automated reasoning
-  system for Coq.
+  system for Coq. In cooperation with Cezary Kaliszyk.
 * [Coinduction](https://github.com/lukaszcz/coinduction#readme): A Coq
   plugin which helps with proofs by coinduction.
 * [HCPL](https://github.com/lukaszcz/hcpl#readme): A prototypical
@@ -21,7 +21,7 @@ enough for at least basic usability.
 * [Javalette](https://github.com/lukaszcz/javalette#readme): An
   educational compiler for Javalette - a subset of C without pointers
   and dynamic memory allocation.
-* [Asm32](https://github.com/lukaszcz/asm32#readme): An educational
+* [ASM32](https://github.com/lukaszcz/asm32#readme): An educational
   assembler for a subset of 32bit x86 instructions. Produces Linux ELF
   executables.
 * [MCP](https://github.com/lukaszcz/mcp#readme): A macro processor.

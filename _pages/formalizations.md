@@ -9,7 +9,7 @@ lines to bigger projects with thousands of lines formalising entire
 papers.
 
 * [A coinductive confluence proof for the infinitary lambda calculus](https://github.com/lukaszcz/infinitary-confluence): A formalisation of my [paper](https://lmcs.episciences.org/6194)
-  about infinitary lambda calculus.
+  about the infinitary lambda calculus.
 * [Confluence of
   an extension of Combinatory Logic by boolean constants](https://github.com/lukaszcz/clc):
   A formalisation of my [paper](https://drops.dagstuhl.de/opus/volltexte/2017/7736/)
