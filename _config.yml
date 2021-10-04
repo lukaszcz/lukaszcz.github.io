@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Łukasz Czajka"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/photo.jpg"
   bio    : "I'm a researcher in computational logic: type theory, term rewriting, lambda calculus, automation for proof assistants."
   links:
     - label: "Website"
