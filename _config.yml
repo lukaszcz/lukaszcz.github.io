@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Homepage of Łukasz Czajka
-masthead_title: About
+masthead_title: Homepage
 name: "Łukasz Czajka"
 email: lukaszcz@mimuw.eud.pl
 description: >- # this means to ignore newlines until "baseurl:"
