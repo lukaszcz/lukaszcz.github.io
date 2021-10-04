@@ -43,8 +43,7 @@ In the past, during my student years and earlier, in addition to my
 ongoing interest in logic and theoretical computer science, I also engaged
 in [compiler construction](https://github.com/lukaszcz/javalette#readme),
 design and implementation of
-[programming](https://github.com/lukaszcz/hcpl#readme)
-[languages](https://github.com/lukaszcz/mcp#readme), low-level
+[programming languages](https://github.com/lukaszcz/hcpl#readme), low-level
 [programming](https://github.com/lukaszcz/asm32#readme), and
 implementation of efficient
 [algorithms and data structures](https://pascaladt.github.io). I still
