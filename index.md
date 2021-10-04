@@ -49,7 +49,7 @@ design and implementation of
 implementation of efficient
 [algorithms and data structures](https://pascaladt.github.io). I still
 remember much from that. See also my
-[old software projects](/software/).
+[software projects](/software/).
 
 ### Bio
 
