@@ -23,3 +23,4 @@ papers.
 * [Sorting algorithms](https://github.com/lukaszcz/sortalgs): quick
   sort, merge sort, insertion sort, selection sort.
 * [Binary search trees](https://github.com/lukaszcz/bst).
+* [Diaconescu's theorem](https://github.com/lukaszcz/diaconescu).
