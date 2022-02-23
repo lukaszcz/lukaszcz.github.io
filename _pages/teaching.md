@@ -5,6 +5,8 @@ title: "Teaching"
 
 Technische Universität Dortmund
 -------------------------------
+* [POPL Seminar (Winter 2021/2022)](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2021WS/POPL/index.html)
+* Datenstrukturen, Algorithmen und Programmierung 1, Praktikum (Winter 2021/2022)
 * [Current topics in logic-based software engineering (summer 2021)](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2021SS/ATLSE/index.html)
 * [Logische
 Methoden des Software Engineering (Winter 2020/2021)](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020WS/LMSE-1/index.html)
@@ -18,7 +20,7 @@ Methoden des Software Engineering (Winter 2020/2021)](https://ls14-www.cs.tu-dor
 
 University of Innsbruck
 -----------------------
-* Functional programming (fall 2015/2016).
+* Functional programming (fall 2015/2016)
 
 University of Warsaw (MIMUW)
 ----------------------------
