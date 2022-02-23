@@ -34,3 +34,4 @@ enough for at least basic usability.
   in x86 assembly.
 * [Snake](https://github.com/lukaszcz/snake#readme): A snake game for
   Linux written in x86 assembly.
+* [CMakefile](https://github.com/lukaszcz/cmakefile#readme): An automatic build system for C/C++.
