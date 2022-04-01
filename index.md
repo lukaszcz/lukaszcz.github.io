@@ -1,7 +1,4 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: single
 toc: true
 author_profile: true
@@ -16,9 +13,10 @@ understood
 Most of my theoretical [publications](/papers/) fall at the border of
 [type theory](https://plato.stanford.edu/entries/type-theory/) and
 [term rewriting](https://en.wikipedia.org/wiki/Rewriting). I've also
-worked on the
-[infinitary lambda calculus](https://lmcs.episciences.org/6194) and
-[combinatory logic](https://drops.dagstuhl.de/opus/volltexte/2017/7736/).
+worked on the [infinitary lambda
+calculus](https://lmcs.episciences.org/6194) and
+[combinatory](https://drops.dagstuhl.de/opus/volltexte/2017/7736/)
+[logic](https://arxiv.org/abs/1202.3672).
 
 I'm interested in automation for proof assitants and proof search in
 non-classical logics. I'm the main developer and maintainer of the
