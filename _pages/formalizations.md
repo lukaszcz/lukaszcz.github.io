@@ -24,3 +24,4 @@ papers.
   sort, merge sort, insertion sort, selection sort.
 * [Binary search trees](https://github.com/lukaszcz/bst).
 * [Diaconescu's theorem](https://github.com/lukaszcz/diaconescu).
+* [Finite Ramsey's theorem](https://github.com/lukaszcz/ramsey)
