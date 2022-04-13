@@ -18,7 +18,7 @@ calculus](https://lmcs.episciences.org/6194) and
 [combinatory](https://drops.dagstuhl.de/opus/volltexte/2017/7736/)
 [logic](https://arxiv.org/abs/1202.3672).
 
-I'm interested in automation for proof assitants and proof search in
+I'm interested in automation for proof assistants and proof search in
 non-classical logics. I'm the main developer and maintainer of the
 [CoqHammer](https://coqhammer.github.io) automated reasoning system
 for [Coq](https://coq.inria.fr). I wrote a
