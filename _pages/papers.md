@@ -7,7 +7,7 @@ toc: true
 Refereed publications
 ---------------------
 
-1. Jan Bessai, Łukasz Czajka, Felix Laarmann, Jakob Rehof: [Restricting Tree Grammars with Term Rewriting](https://drops.dagstuhl.de/opus/volltexte/2022/16295/pdf/LIPIcs-FSCD-2022-14.pdf)
+1. Jan Bessai, Łukasz Czajka, Felix Laarmann, Jakob Rehof: [Restricting Tree Grammars with Term Rewriting](https://drops.dagstuhl.de/opus/volltexte/2022/16295/pdf/LIPIcs-FSCD-2022-14.pdf), [FSCD 2022](https://www.cs.tau.ac.il/~nachumd/FSCD/)
 2. Łukasz Czajka: [Practical proof search for Coq by type inhabitation](/papers/sauto.pdf),
 [IJCAR 2020](https://ijcar2020.org), ([evaluations](https://www.mimuw.edu.pl/~lukaszcz/sauto/index.html)) ([slides](sauto-pres.pdf))
 3. Łukasz Czajka: [A new coinductive confluence proof for infinitary lambda-calculus](https://lmcs.episciences.org/6194), [Logical Methods in Computer Science](https://lmcs.episciences.org/),
