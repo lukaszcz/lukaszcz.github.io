@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Łukasz Czajka"
   avatar : "/assets/images/photo.jpg"
-  bio    : "Compiler engineer, programming language designer, proof automation specialist, researcher in computational logic."
+  bio    : "compiler engineer, programming language designer, proof automation specialist, researcher in computational logic"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -68,9 +68,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lukaszcz/"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/lukaszczz"
+#    - label: "LinkedIn"
+#      icon: "fab fa-fw fa-linkedin"
+#      url: "https://www.linkedin.com/in/lukaszczz"
 
 atom_feed:
   hide: true
