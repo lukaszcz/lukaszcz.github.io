@@ -15,15 +15,15 @@ enough for at least basic usability.
   plugin which helps with proofs by coinduction.
 * [HCPL](https://github.com/lukaszcz/hcpl#readme): A prototypical
   proof checker and programming language based on illative combinatory
-  logic.
+  logic. Written in OCaml.
 * [PascalAdt](https://pascaladt.github.io): A library of data
   structures and algorithms for the Free Pascal compiler.
 * [Javalette](https://github.com/lukaszcz/javalette#readme): An
   educational compiler for Javalette - a subset of C without pointers
-  and dynamic memory allocation.
+  and dynamic memory allocation. Written in C.
 * [ASM32](https://github.com/lukaszcz/asm32#readme): An educational
   assembler for a subset of 32bit x86 instructions. Produces Linux ELF
-  executables.
+  executables. Written in C.
 * [MCP](https://github.com/lukaszcz/mcp#readme): A macro processor.
 * [Dict2](https://github.com/lukaszcz/dict2#readme): A dictionary
   viewing application for Linux.
@@ -32,6 +32,4 @@ enough for at least basic usability.
 * [HexCalc](https://github.com/lukaszcz/hexcalc#readme): A calculator
   which lets you see the results of various x86 instructions. Written
   in x86 assembly.
-* [Snake](https://github.com/lukaszcz/snake#readme): A snake game for
-  Linux written in x86 assembly.
 * [CMakefile](https://github.com/lukaszcz/cmakefile#readme): An automatic build system for C/C++.
