@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Łukasz Czajka"
   avatar : "/assets/images/photo.jpg"
-  bio    : "I'm a researcher in computational logic: type theory, term rewriting, lambda calculus, automation for proof assistants."
+  bio    : "Compiler engineer, programming language designer, proof automation specialist, researcher in computational logic."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -68,6 +68,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lukaszcz/"
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lukaszczz"
 
 atom_feed:
   hide: true
