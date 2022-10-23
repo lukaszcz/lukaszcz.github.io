@@ -61,7 +61,7 @@ received a [Marie Curie Individual
 Fellowship](https://ec.europa.eu/research/mariecurieactions/actions/postdoctoral-fellowships)
 to move to [Copenhagen](https://di.ku.dk/) and work on an [infinitary
 rewriting interpretation of coinductive
-types](https://lmcs.episciences.org/6097). Then I spent several years
+types](https://lmcs.episciences.org/6097). Afterwards, I spent several years
 as a researcher at the [Technical University of
 Dortmund](https://ls14-www.cs.tu-dortmund.de). Now I work in the
 industry.
