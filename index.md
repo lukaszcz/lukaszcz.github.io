@@ -25,12 +25,10 @@ My principal research interests include automation for proof
 assistants and proof search in non-classical logics. I'm the main
 developer and maintainer of the
 [CoqHammer](https://coqhammer.github.io) automated reasoning system
-for [Coq](https://coq.inria.fr). I wrote a [Coq
-plugin](https://github.com/lukaszcz/coinduction) to help with proofs
-by coinduction. I've been working on [proof search in dependent type
-theory](/papers/sauto.pdf) and intuitionistic logic, and on improving
-automation for disjunctive formulas in
-[IRIS](https://iris-project.org).
+for [Coq](https://coq.inria.fr). I wrote a [Coq plugin](https://github.com/lukaszcz/coinduction) to help with proofs
+by coinduction. I've been working on [proof search in dependent type theory](/papers/sauto.pdf) and intuitionistic logic, and on improving
+[automation for disjunctive formulas](https://ikemulder.nl/media/papers/pldi23-diaframe-vee-preprint.pdf)
+in [IRIS](https://iris-project.org).
 
 During my past academic career, I published some theoretical
 [papers](/papers/) at the border of [type
@@ -38,7 +36,9 @@ theory](https://plato.stanford.edu/entries/type-theory/) and [term
 rewriting](https://en.wikipedia.org/wiki/Rewriting). I've also worked
 on the [infinitary lambda calculus](https://lmcs.episciences.org/6194)
 and [combinatory](https://drops.dagstuhl.de/opus/volltexte/2017/7736/)
-[logic](https://arxiv.org/abs/1202.3672).
+[logic](https://arxiv.org/abs/1202.3672). Some of this research earned
+references in the new monograph [Lambda Calculus Satellite](https://www.amazon.com/Lambda-Calculus-Satellite-Henk-Barendregt/dp/1848904150) by
+Barendregt and Manzonetto.
 
 I have a solid background in [proof assistants](/formalizations/),
 [compiler construction](https://github.com/lukaszcz/javalette#readme),
