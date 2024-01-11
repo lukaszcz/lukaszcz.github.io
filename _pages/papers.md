@@ -49,7 +49,7 @@ PhD thesis
 Łukasz Czajka: [Semantic consistency proofs for systems of Illative Combinatory Logic](phd.pdf),
 PhD thesis, 2015, [slides](pres-phd.pdf), extended abstract: [en](aut-en.pdf), [pl](aut-pl.pdf)
 
-* Related: [HCPL implementation](https://github.com/lukaszcz/hcpl)
+Related: [HCPL implementation](https://github.com/lukaszcz/hcpl)
 
 Unpublished notes
 -----------------
