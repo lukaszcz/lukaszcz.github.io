@@ -41,7 +41,7 @@ Technical reports
 -----------------
 
 1. Łukasz Czajka, [The Core language of Juvix](https://zenodo.org/records/8297159), [ART](https://anoma.github.io/art-index/), 2023
-2. Łukasz Czajka, [Juvix to VampIR Pipeline](https://zenodo.org/records/8268823), [ART](https://anoma.github.io/art-index/), 2023
+2. Łukasz Czajka, [Juvix to VampIR pipeline](https://zenodo.org/records/8268823), [ART](https://anoma.github.io/art-index/), 2023
 
 PhD thesis
 ----------
