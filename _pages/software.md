@@ -16,8 +16,6 @@ enough for at least basic usability.
 * [HCPL](https://github.com/lukaszcz/hcpl#readme): A prototypical
   proof checker and programming language based on illative combinatory
   logic. Written in OCaml.
-* [PascalAdt](https://pascaladt.github.io): A library of data
-  structures and algorithms for the Free Pascal compiler.
 * [Javalette](https://github.com/lukaszcz/javalette#readme): An
   educational compiler for Javalette - a subset of C without pointers
   and dynamic memory allocation. Written in C.
@@ -25,6 +23,8 @@ enough for at least basic usability.
   assembler for a subset of 32bit x86 instructions. Produces Linux ELF
   executables. Written in C.
 * [MCP](https://github.com/lukaszcz/mcp#readme): A macro processor.
+* [PascalAdt](https://pascaladt.github.io): A library of data
+  structures and algorithms for the Free Pascal compiler.
 * [Dict2](https://github.com/lukaszcz/dict2#readme): A dictionary
   viewing application for Linux.
 * [SrcDoc](https://github.com/lukaszcz/srcdoc#readme): A documentation

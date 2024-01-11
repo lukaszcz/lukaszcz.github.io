@@ -7,7 +7,7 @@ toc: true
 Refereed publications
 ---------------------
 
-1. Ike Mulder, Łukasz Czajka, Robbert Krebbers: [Beyond Backtracking: Connections in Fine-Grained Concurrent Separation Logic](https://ikemulder.nl/media/papers/pldi23-diaframe-vee-preprint.pdf), [PLDI 2023](https://pldi23.sigplan.org)
+1. Ike Mulder, Łukasz Czajka, Robbert Krebbers: [Beyond Backtracking: Connections in Fine-Grained Concurrent Separation Logic](https://dl.acm.org/doi/abs/10.1145/3591275), [PLDI 2023](https://pldi23.sigplan.org)
 2. Jan Bessai, Łukasz Czajka, Felix Laarmann, Jakob Rehof: [Restricting Tree Grammars with Term Rewriting](https://drops.dagstuhl.de/opus/volltexte/2022/16295/pdf/LIPIcs-FSCD-2022-14.pdf), [FSCD 2022](https://www.cs.tau.ac.il/~nachumd/FSCD/)
 3. Łukasz Czajka: [Practical proof search for Coq by type inhabitation](/papers/sauto.pdf),
 [IJCAR 2020](https://ijcar2020.org), ([evaluations](https://www.mimuw.edu.pl/~lukaszcz/sauto/index.html)) ([slides](sauto-pres.pdf))
@@ -37,11 +37,19 @@ Workshops (selected)
 3. Łukasz Czajka, Cezary Kaliszyk: [Goal Translation for a Hammer for Coq (Extended Abstract)](http://dx.doi.org/10.4204/EPTCS.210.4), [HaTT 2016](https://hatt2016.inria.fr/)
 4. Łukasz Czajka, Cezary Kaliszyk: [Components of a Hammer for Type Theory: Coq Goal Translation and Reconstruction](http://www.types2016.uns.ac.rs/images/abstracts/czajka.pdf), [TYPES 2016](http://www.types2016.uns.ac.rs) ([slides](/papers/types2016.pdf))
 
+Technical reports
+-----------------
+
+1. Łukasz Czajka, [The Core language of Juvix](https://zenodo.org/records/8297159), [ART](https://anoma.github.io/art-index/), 2023
+2. Łukasz Czajka, [Juvix to VampIR Pipeline](https://zenodo.org/records/8268823), [ART](https://anoma.github.io/art-index/), 2023
+
 PhD thesis
 ----------
 
 Łukasz Czajka: [Semantic consistency proofs for systems of Illative Combinatory Logic](phd.pdf),
 PhD thesis, 2015, [slides](pres-phd.pdf), extended abstract: [en](aut-en.pdf), [pl](aut-pl.pdf)
+
+* Related: [HCPL implementation](https://github.com/lukaszcz/hcpl)
 
 Unpublished notes
 -----------------
