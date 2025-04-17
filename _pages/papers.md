@@ -40,10 +40,9 @@ Workshops (selected)
 Technical reports
 -----------------
 
-1. Łukasz Czajka, [Nock for functional programmers](https://doi.org/10.5281/zenodo.14511713), [ART](https://art.anoma.net), 2024
-2. Łukasz Czajka, [Compiling Juvix to Cairo Assembly](https://zenodo.org/records/13739344), [ART](https://art.anoma.net), 2024
-3. Łukasz Czajka, [The Core language of Juvix](https://zenodo.org/records/8297159), [ART](https://art.anoma.net), 2023
-4. Łukasz Czajka, [Juvix to VampIR pipeline](https://zenodo.org/records/8268823), [ART](https://art.anoma.net), 2023
+1. Łukasz Czajka, [Compiling Juvix to Cairo Assembly](https://zenodo.org/records/13739344), [ART](https://art.anoma.net), 2024
+2. Łukasz Czajka, [The Core language of Juvix](https://zenodo.org/records/8297159), [ART](https://art.anoma.net), 2023
+3. Łukasz Czajka, [Juvix to VampIR pipeline](https://zenodo.org/records/8268823), [ART](https://art.anoma.net), 2023
 
 PhD thesis
 ----------
