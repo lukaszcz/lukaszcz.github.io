@@ -43,8 +43,7 @@ Barendregt and Manzonetto.
 I have a solid background in [proof assistants](/formalizations/),
 [compiler construction](https://github.com/lukaszcz/javalette#readme),
 design and implementation of [programming
-languages](https://github.com/lukaszcz/hcpl#readme), low-level systems
-[programming](https://github.com/lukaszcz/asm32#readme), and
+languages](https://github.com/lukaszcz/hcpl#readme), low-level [programming](https://github.com/lukaszcz/asm32#readme), and
 implementation of efficient [algorithms and data
 structures](https://pascaladt.github.io). See also my [software
 projects](/software/).
