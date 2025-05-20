@@ -7,8 +7,7 @@ author_profile: true
 Hello! My name is Łukasz Czajka. I'm a compiler engineer and a
 programming language designer. I used to work full-time in academia
 doing research in broadly understood [computational
-logic](https://en.wikipedia.org/wiki/Logic_in_computer_science), which
-I still pursue as a hobby.
+logic](https://en.wikipedia.org/wiki/Logic_in_computer_science).
 
 ### Interests
 
