@@ -17,8 +17,7 @@ functional programming language [Juvix](https://juvix.org).
 I'm interested in type theory, functional programming, theory and
 implementation of programming languages, and deductive program
 verification. I've done some [teaching](/teaching/) related to
-[these](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2019WS/POPL/index.html)
-[topics](https://ls14-www.cs.tu-dortmund.de/cms/de/Lehre/Lehrveranstaltungen/2020SS/ATLSE/index.html).
+[these topics](/rocq/).
 
 My principal research interests include automation for proof
 assistants and proof search in non-classical logics. I'm the main
