@@ -83,3 +83,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: "rocq-course"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      toc: true
