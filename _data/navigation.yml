@@ -1,6 +1,8 @@
 main:
   - title: "Papers"
     url: /papers/
+  - title: "Teaching"
+    url: /teaching/
   - title: "Software"
     url: /software/
   - title: "Formalizations"
