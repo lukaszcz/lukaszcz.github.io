@@ -2,6 +2,7 @@
 permalink: /papers/
 title: "Papers"
 toc: true
+toc_sticky: true
 ---
 
 Refereed publications
