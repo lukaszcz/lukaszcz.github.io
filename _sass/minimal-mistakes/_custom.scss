@@ -1,8 +1,4 @@
-// Make the right sidebar TOC sticky
-.sidebar__right .toc {
-  position: sticky;
-  top: 2rem;           // Distance from top of viewport
-  max-height: calc(100vh - 4rem); // Avoids overflow at bottom
-  overflow-y: auto;    // Scroll within the TOC if it gets too long
-  padding-right: 1rem; // Optional: space from right edge
+// make the existing .sidebar.sticky rules apply to .sidebar__right
+.sidebar__right.sticky {
+  @extend .sidebar.sticky;
 }
