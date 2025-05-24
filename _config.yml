@@ -90,6 +90,9 @@ defaults:
       layout: single
       author_profile: true
 
+head_scripts:
+  - /assets/js/head-sticky-toc.js
+
 # This ensures that custom styles are applied
 sass:
   style: compressed
