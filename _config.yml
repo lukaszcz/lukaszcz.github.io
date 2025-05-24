@@ -89,3 +89,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# This ensures that custom styles are applied
+sass:
+  style: compressed
