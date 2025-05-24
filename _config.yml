@@ -83,16 +83,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+      toc_sticky: true
   - scope:
       path: "rocq-course"
       type: pages
     values:
       layout: single
       author_profile: true
-
-head_scripts:
-  - /assets/js/head-sticky-toc.js
-
-# This ensures that custom styles are applied
-sass:
-  style: compressed
+      toc_sticky: true
