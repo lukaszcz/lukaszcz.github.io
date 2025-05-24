@@ -1,9 +1,8 @@
 ---
 permalink: /rocq/
 title: "Theory and Practice of Rocq"
+toc: true
 ---
-
-# Theory and Practice of Rocq
 
 This is a slightly updated version of a lecture I gave at TU Dortmund in the years 2020 and 2021. Some of the tutorials and exercises require [CoqHammer](https://coqhammer.github.io). The tutorial files have been tested with Coq 8.19.
 
