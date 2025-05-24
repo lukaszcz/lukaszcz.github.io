@@ -1,4 +1,4 @@
 // make the existing .sidebar.sticky rules apply to .sidebar__right
-.sidebar__right.sticky {
-  @extend .sidebar.sticky;
+.sidebar__right {
+  @extend .sticky;
 }
