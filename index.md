@@ -55,7 +55,7 @@ Urzyczyn](http://www.mimuw.edu.pl/~urzy/). Then I was a postdoc in
 [Innsbruck](http://cl-informatik.uibk.ac.at/) where I developed
 [CoqHammer](https://coqhammer.github.io) with [Cezary
 Kaliszyk](http://cl-informatik.uibk.ac.at/cek/).  After that I
-received a [Marie Curie Individual
+received a [Marie Skłodowska-Curie Individual
 Fellowship](https://ec.europa.eu/research/mariecurieactions/actions/postdoctoral-fellowships)
 to move to [Copenhagen](https://di.ku.dk/) and work on an [infinitary
 rewriting interpretation of coinductive
