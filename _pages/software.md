@@ -9,6 +9,7 @@ lines to medium-sized projects of 10k-30k lines. Some are in a
 prototype stage, but all have been tested, debugged and completed
 enough for at least basic usability.
 
+* [Juvix](https://juvix.org): A functional language for declarative decentralized applications. I was one of the main developers.
 * [CoqHammer](https://coqhammer.github.io): An automated reasoning
   system for Coq. In cooperation with Cezary Kaliszyk.
 * [Coinduction](https://github.com/lukaszcz/coinduction#readme): A Coq
@@ -16,6 +17,7 @@ enough for at least basic usability.
 * [HCPL](https://github.com/lukaszcz/hcpl#readme): A prototypical
   proof checker and programming language based on illative combinatory
   logic. Written in OCaml.
+* [Lean2RISC0](https://github.com/lukaszcz/risc0-lean-example): Cross-compiling Lean 4 to the RISC Zero zkVM.
 * [Javalette](https://github.com/lukaszcz/javalette#readme): An
   educational compiler for Javalette - a subset of C without pointers
   and dynamic memory allocation. Written in C.
