@@ -4,9 +4,7 @@ title: "Formalizations"
 ---
 
 Below is an incomplete list of Coq formalisations I've written over
-the years. These range from small formalisations with several hundred
-lines to bigger projects with thousands of lines formalising entire
-papers.
+the years.
 
 * [A coinductive confluence proof for the infinitary lambda calculus](https://github.com/lukaszcz/infinitary-confluence): A formalisation of my [paper](https://lmcs.episciences.org/6194)
   about the infinitary lambda calculus.
