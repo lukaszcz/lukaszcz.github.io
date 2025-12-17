@@ -3,7 +3,7 @@ permalink: /software/
 title: "Software"
 ---
 
-Below is an incomplete list of open source software I've written or significantly contributed to over
+Below is an incomplete list of open source software I've written by myself or significantly contributed to over
 the years.
 
 * [Juvix](https://juvix.org): A functional language for declarative decentralized applications. I was one of the main developers.
