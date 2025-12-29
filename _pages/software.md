@@ -15,10 +15,6 @@ the years.
   proof checker and programming language based on illative combinatory
   logic. Written in OCaml.
 * [Lean2RISC0](https://github.com/lukaszcz/risc0-lean-example): Cross-compiling Lean 4 to the RISC Zero zkVM.
-* [PascalAdt](https://pascaladt.github.io): A library of data
-  structures and algorithms for the Free Pascal compiler.
-* [SrcDoc](https://github.com/lukaszcz/srcdoc#readme): A documentation
-  generator a la Doxygen for Free Pascal and Delphi.
 * [Javalette](https://github.com/lukaszcz/javalette#readme): An
   educational compiler for Javalette - a subset of C without pointers
   and dynamic memory allocation. Written in C.
@@ -28,3 +24,7 @@ the years.
 * [CMakefile](https://github.com/lukaszcz/cmakefile#readme): An automatic build system for C/C++.
 * [Dict2](https://github.com/lukaszcz/dict2#readme): A dictionary
   viewing application for Linux.
+* [PascalAdt](https://pascaladt.github.io): A library of data
+  structures and algorithms for the Free Pascal compiler.
+* [SrcDoc](https://github.com/lukaszcz/srcdoc#readme): A documentation
+  generator a la Doxygen for Free Pascal and Delphi.
