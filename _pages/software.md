@@ -23,11 +23,8 @@ the years.
   executables. Written in C.
 * [PascalAdt](https://pascaladt.github.io): A library of data
   structures and algorithms for the Free Pascal compiler.
-* [Dict2](https://github.com/lukaszcz/dict2#readme): A dictionary
-  viewing application for Linux.
 * [SrcDoc](https://github.com/lukaszcz/srcdoc#readme): A documentation
   generator a la Doxygen for Free Pascal and Delphi.
-* [HexCalc](https://github.com/lukaszcz/hexcalc#readme): A calculator
-  which lets you see the results of various x86 instructions. Written
-  in x86 assembly.
 * [CMakefile](https://github.com/lukaszcz/cmakefile#readme): An automatic build system for C/C++.
+* [Dict2](https://github.com/lukaszcz/dict2#readme): A dictionary
+  viewing application for Linux.
