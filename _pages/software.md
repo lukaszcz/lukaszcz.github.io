@@ -12,7 +12,7 @@ Below is an incomplete list of open source software I've written by myself or si
   plugin which helps with proofs by coinduction.
 * [HCPL](https://github.com/lukaszcz/hcpl#readme): A prototypical
   proof checker and programming language based on illative combinatory
-  logic. Written in OCaml.
+  logic.
 * [PascalAdt](https://pascaladt.github.io): A library of data
   structures and algorithms for the Free Pascal compiler.
 * [SrcDoc](https://github.com/lukaszcz/srcdoc#readme): A documentation
