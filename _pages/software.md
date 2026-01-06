@@ -3,8 +3,7 @@ permalink: /software/
 title: "Software"
 ---
 
-Below is an incomplete list of open source software I've written by myself or significantly contributed to over
-the years.
+Below is an incomplete list of open source software I've written by myself or significantly contributed to.
 
 * [Juvix](https://juvix.org): A functional language for declarative decentralized applications. I was one of the main developers.
 * [CoqHammer](https://coqhammer.github.io): An automated reasoning
