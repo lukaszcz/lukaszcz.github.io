@@ -64,7 +64,10 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://lukaszcz.github.io/"
+      url: "https://lukaszcz.eu/"
+    - label: "Blog"
+      icon: "fas fa-fw fa-blog"
+      url: "https://blog.lukaszcz.eu/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lukaszcz/"
