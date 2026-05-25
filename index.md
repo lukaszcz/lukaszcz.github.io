@@ -5,22 +5,20 @@ toc_sticky: true
 author_profile: true
 ---
 
-Hello! My name is Łukasz Czajka. I'm a compiler engineer and a
-programming language designer. I used to work full-time in academia
-doing research in broadly understood [computational
-logic](https://en.wikipedia.org/wiki/Logic_in_computer_science).
+Hello! My name is Łukasz Czajka. I'm a formal verification engineer, compiler engineer and a programming language designer. I used to work full-time in academia doing research in broadly understood [computational logic](https://en.wikipedia.org/wiki/Logic_in_computer_science).
 
 ### Interests
 
-Currently, I work on the design and implementation of the
-functional programming language [Juvix](https://juvix.org).
+Currently, I work on scaling formal software verification with AI agents.
+
+Earlier, I was one of the main developers of the functional programming language [Juvix](https://juvix.org).
 
 I'm interested in type theory, functional programming, theory and
 implementation of programming languages, and deductive program
 verification. I've done some [teaching](/teaching/) related to
 [these topics](/rocq/).
 
-My principal research interests include automation for proof
+My research interests include automation for proof
 assistants and proof search in non-classical logics. I'm the main
 developer and maintainer of the
 [CoqHammer](https://coqhammer.github.io) automated reasoning system
@@ -39,13 +37,12 @@ and [combinatory](https://drops.dagstuhl.de/opus/volltexte/2017/7736/)
 references in the new monograph [Lambda Calculus Satellite](https://www.amazon.com/Lambda-Calculus-Satellite-Henk-Barendregt/dp/1848904150) by
 Barendregt and Manzonetto.
 
-I have a solid background in [proof assistants](/formalizations/),
+I have a background in [proof assistants](/formalizations/),
 [compiler construction](https://github.com/lukaszcz/javalette#readme),
 design and implementation of [programming
 languages](https://github.com/lukaszcz/hcpl#readme), low-level [programming](https://github.com/lukaszcz/asm32#readme), and
 implementation of efficient [algorithms and data
-structures](https://pascaladt.github.io). See also my [software
-projects](/software/).
+structures](https://pascaladt.github.io).
 
 ### Bio
 
