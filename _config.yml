@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Łukasz Czajka"
-  avatar : "/assets/images/photo.jpg"
+  avatar : "/assets/images/lukasz.png"
   bio    : "compiler construction, programming language design, formal verification, proof automation, computational logic"
   links:
     - label: "Website"
