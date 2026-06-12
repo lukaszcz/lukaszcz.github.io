@@ -5,7 +5,7 @@ toc_sticky: true
 author_profile: true
 ---
 
-Hello! My name is Łukasz Czajka. I'm a formal verification engineer, compiler engineer and a programming language designer. I used to work full-time in academia doing research in broadly understood [computational logic](https://en.wikipedia.org/wiki/Logic_in_computer_science).
+Hello! My name is Łukasz Czajka. I'm a formal verification engineer, compiler developer and a programming language designer. I used to work full-time in academia doing research in broadly understood [computational logic](https://en.wikipedia.org/wiki/Logic_in_computer_science).
 
 ### Interests
 
@@ -51,7 +51,7 @@ Warsaw](http://www.mimuw.edu.pl) under supervision of [Paweł
 Urzyczyn](http://www.mimuw.edu.pl/~urzy/). Then I was a postdoc in
 [Innsbruck](http://cl-informatik.uibk.ac.at/) where I developed
 [CoqHammer](https://coqhammer.github.io) with [Cezary
-Kaliszyk](http://cl-informatik.uibk.ac.at/cek/).  After that I
+Kaliszyk](http://cl-informatik.uibk.ac.at/cek/). After that I
 received a [Marie Skłodowska-Curie Individual
 Fellowship](https://ec.europa.eu/research/mariecurieactions/actions/postdoctoral-fellowships)
 to move to [Copenhagen](https://di.ku.dk/) and work on an [infinitary
